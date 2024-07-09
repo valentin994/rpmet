@@ -2,10 +2,16 @@
     import { animate, inView } from "motion";
     import Recycle from "$lib/assets/recycle.svg";
     import { onMount } from "svelte";
-    let group;
+    let group, hero, heading;
     let bakar, aluminij, zeljezo;
 
     onMount(()=> {
+        inView(heading, () => {
+            animate(heading, {opacity: [0, 100], x: [-100, 0]}, {duration: 1, easing: "ease-in"})
+        })
+        inView(hero, () => {
+            animate(hero, {opacity: [0, 100], y: [100, 0]}, {duration: 1, easing: "ease-in"})
+        })
         inView(group, () => {
             setTimeout(() => {
                 animate(
@@ -28,10 +34,10 @@
 </script>
 <div class="flex bg-[url('/kantasm.jpg')] bg-cover bg-no-repeat md:bg-[url('/kante.jpg')]">
     <div class="px-4 md:px-20 py-40 md:py-80 lg:px-48">
-        <h1 class="text-3xl md:text-4xl p-4 rounded max-w-[500px] text-left text-gray-50 font-bold bg-primary/85">Mi smo tvrtka specijalizirana za preradu i trgovinu metalnim otpadom.</h1>
+        <h1 bind:this={heading} class="text-3xl md:text-4xl p-4 rounded max-w-[500px] text-left text-gray-50 font-bold bg-primary/85">Mi smo tvrtka specijalizirana za preradu i trgovinu metalnim otpadom.</h1>
     </div>
 </div>
-<div class="px-4 md:px-20 lg:px-48">
+<div bind:this={hero} class="px-4 md:px-20 lg:px-48">
     <h1 class="text-3xl text-primary text-center py-4 font-extrabold">RP Metal u brojkama</h1>
     <div class="flex py-4 justify-center">
         <img class="max-w-40 md:max-w-32" src={Recycle} alt="Recycle" />
