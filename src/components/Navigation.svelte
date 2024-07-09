@@ -83,15 +83,15 @@
             : "opacity-0 -translate-x-full"
         }`}
       >
-        <ul class="flex flex-col items-baseline w-full justify-end align-middle text-center text-gray-500">
-          <li bind:this={pocetna} id="pocetna" class="text-4xl p-4 border-y border-t-2 border-gray-300 w-full text-right">
+        <ul class="flex flex-col items-baseline w-full justify-end align-middle text-center font-light text-gray-500">
+          <li bind:this={pocetna} class="text-5xl tracking-tighter p-4 border-y border-t-2 border-gray-300 w-full text-right">
             <a on:click={() => isMenuOpen = false}
               href="/"
             >
-              POCETNA
+              POČETNA
             </a>
           </li>
-          <li bind:this={onama} class="text-4xl p-4 border-y border-gray-300 w-full text-right">
+          <li bind:this={onama} class=" tracking-tighter text-5xl p-4 border-y border-gray-300 w-full text-right">
             <a on:click={() => isMenuOpen = false}
               href="/"
               class="nav-link"
@@ -99,7 +99,7 @@
               O NAMA
             </a>
           </li>
-          <li bind:this={otkup} class="text-4xl p-4 border-y border-gray-300 w-full text-right">
+          <li bind:this={otkup} class="text-5xl tracking-tighter p-4 border-y border-gray-300 w-full text-right">
             <a on:click={() => isMenuOpen = false}
               href="/"
               class="nav-link"
@@ -107,7 +107,7 @@
               OTKUP
             </a>
           </li>
-          <li bind:this={zbrinjavanje} class="text-4xl p-4 border-y border-gray-300 w-full text-right">
+          <li bind:this={zbrinjavanje} class="text-5xl tracking-tighter p-4 border-y border-gray-300 w-full text-right">
             <a on:click={() => isMenuOpen = false}
               href="/"
               class="nav-link"
@@ -115,7 +115,7 @@
               ZBRINJAVANJE
             </a>
           </li>
-          <li bind:this={kontakt} class="text-4xl p-4 border-y border-gray-300 w-full text-right">
+          <li bind:this={kontakt} class="text-5xl p-4 tracking-tighter border-y border-gray-300 w-full text-right">
             <a on:click={() => isMenuOpen = false}
               href="/"
               class="nav-link"
