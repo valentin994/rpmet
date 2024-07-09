@@ -4,7 +4,7 @@
     import { browser } from '$app/environment';
     import { inView, animate } from "motion";
     import { onMount } from "svelte";
-
+    import Logo from "$lib/assets/logo.svg";
     $: if (browser) document.body.classList.toggle("noscroll", isMenuOpen);
 	$: href = $page.url.pathname;
     let pocetna, onama, otkup, zbrinjavanje, kontakt;
@@ -27,22 +27,22 @@
 <nav class="px-4 md:px-16 border-b border-gray-200">
       <div class="flex items-center justify-between w-full">
         <a href="/" class="text-primary px-4 min-w-24 text-xl z-20" on:click={() => isMenuOpen=false}>
-            RP Metal
+            <img class="max-h-12 full" src={Logo} alt="Logo" /> 
         </a>
-        <div class="text-gray-800 hidden md:max-[4200px]:block md:text-md z-20">
+        <div class="text-gray-500 hidden md:max-[4200px]:block md:text-md z-20">
           <ul class="flex h-full">
             <li class="px-2 py-6 ">
-              <a href="/" class={`font-bold transition-all duration-300 ease-in hover:text-gray-200 ${href.includes("/") ?
-              "text-white" : ""}`}  class:active="{href.includes('/')}">POČETNA</a>
+              <a href="/" class={`font-bold transition-all duration-300 ease-in hover:text-gray-300 ${href.includes("/") ?
+              "text-primary" : ""}`}  class:active="{href.includes('/')}">POČETNA</a>
             </li>
             <li class="px-2 py-6">
-              <a href="/" class="font-bold transition-all duration-300 ease-in hover:text-gray-200">O NAMA</a>
+              <a href="/" class="font-bold transition-all duration-300 ease-in hover:text-gray-300">O NAMA</a>
             </li>
             <li class="px-2 py-6 ">
-              <a href="/" class="font-bold transition-all duration-300 ease-in hover:text-gray-200">OTKUP</a>
+              <a href="/" class="font-bold transition-all duration-300 ease-in hover:text-gray-300">OTKUP</a>
             </li>
             <li class="px-2 py-6">
-              <a href="/" class="font-bold transition-all duration-300 ease-in hover:text-gray-200">ZBRINJAVANJE</a>
+              <a href="/" class="font-bold transition-all duration-300 ease-in hover:text-gray-300">ZBRINJAVANJE</a>
             </li>
             <li class="px-2 py-6">
               <a href="/" class="font-bold transition-all duration-300 ease-in hover:text-gray-200">KONTAKT</a>
