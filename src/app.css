@@ -3,6 +3,5 @@
 @tailwind utilities;
 
 .noscroll {
-    max-height: 100vh;
-    overflow-y: hidden;
+    overflow-y: hidden !important;
 }

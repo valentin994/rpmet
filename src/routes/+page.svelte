@@ -37,7 +37,7 @@
         <h1 bind:this={heading} class="text-3xl md:text-4xl p-4 rounded max-w-[500px] text-left text-gray-50 font-bold bg-primary/85">Mi smo tvrtka specijalizirana za preradu i trgovinu metalnim otpadom.</h1>
     </div>
 </div>
-<div bind:this={hero} class="px-4 md:px-20 lg:px-48">
+<div bind:this={hero} class="px-4 md:px-20 lg:px-48 pt-8">
     <h1 class="text-3xl text-primary text-center py-4 font-extrabold">RP Metal u brojkama</h1>
     <div class="flex py-4 justify-center">
         <img class="max-w-40 md:max-w-32" src={Recycle} alt="Recycle" />
