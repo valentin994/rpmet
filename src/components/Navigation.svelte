@@ -53,7 +53,7 @@
         </div>
         <button
           name="Contact call to action"
-          class={`md:hidden m-4 flex top-0 right-0 z-50 relative w-10 h-10 text-textcol focus:outline-none ${isMenuOpen ? "sticky" : ""}`}
+          class={`md:hidden m-4 flex top-0 right-0 z-50 relative w-10 h-10 text-textcol focus:outline-none ${isMenuOpen ? "sticky" : "sticky"}`}
           on:click={toggleMenu}
         >
           <div class="absolute w-5 transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
