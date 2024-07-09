@@ -7,11 +7,24 @@
 
     $: if (browser) document.body.classList.toggle("noscroll", isMenuOpen);
 	$: href = $page.url.pathname;
-    
+    let pocetna, onama, otkup, zbrinjavanje, kontakt;
+
+    function toggleMenu() {
+        if(!isMenuOpen){
+            animate(pocetna, {x: [-300, 0]}, {duration:1.5})
+            animate(onama, {x: [-300, 0]}, {duration:1.5, delay:0.1})
+            animate(otkup, {x: [-300, 0]}, {duration:1.5, delay: 0.2})
+            animate(zbrinjavanje, {x: [-300, 0]}, {duration:1.5, delay: 0.3})
+            animate(kontakt, {x: [-300, 0]}, {duration:1.5, delay:0.4})
+        }
+        isMenuOpen = !isMenuOpen;    
+    }
+
     onMount(() => {
+
     })
 </script>
-<nav class="bg-gray-100 px-4 md:px-16">
+<nav class="px-4 md:px-16 border-b border-gray-200">
       <div class="flex items-center justify-between w-full">
         <a href="/" class="text-primary px-4 min-w-24 text-xl z-20" on:click={() => isMenuOpen=false}>
             RP Metal
@@ -41,7 +54,7 @@
         <button
           name="Contact call to action"
           class="md:hidden m-4 flex top-0 right-0 z-50 relative w-10 h-10 text-textcol focus:outline-none"
-          on:click={()=> isMenuOpen = !isMenuOpen}
+          on:click={toggleMenu}
         >
           <div class="absolute w-5 transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
             <span
@@ -64,42 +77,50 @@
       </div>
 
     <nav
-        class={`fixed flex top-0 left-0 w-full z-40 h-screen bg-gray-200 text-primary bg-opacity-100 transform delay-100 transition-all duration-500 ${
+        class={`fixed flex top-0 left-0 w-full z-40 h-screen bg-gray-50 text-primary bg-opacity-100 transform delay-100 transition-all duration-500 ${
           isMenuOpen
             ? "opacity-100 translate-x-0"
             : "opacity-0 -translate-x-full"
         }`}
       >
-        <ul class="flex flex-col items-center w-full justify-center align-middle text-center text-textcol">
-          <li class="text-2xl p-4">
-            <a id="home" on:click={() => isMenuOpen = false}
+        <ul class="flex flex-col items-baseline w-full justify-end align-middle text-center text-gray-500">
+          <li bind:this={pocetna} id="pocetna" class="text-4xl p-4 border-y border-t-2 border-gray-300 w-full text-right">
+            <a on:click={() => isMenuOpen = false}
               href="/"
             >
-              Pocetna
+              POCETNA
             </a>
           </li>
-          <li class="text-2xl p-4">
-            <a id="aboutus" on:click={() => isMenuOpen = false}
+          <li bind:this={onama} class="text-4xl p-4 border-y border-gray-300 w-full text-right">
+            <a on:click={() => isMenuOpen = false}
               href="/"
               class="nav-link"
             >
-              O nama
+              O NAMA
             </a>
           </li>
-          <li class="text-2xl p-4">
-            <a id="kave" on:click={() => isMenuOpen = false}
+          <li bind:this={otkup} class="text-4xl p-4 border-y border-gray-300 w-full text-right">
+            <a on:click={() => isMenuOpen = false}
               href="/"
               class="nav-link"
             >
-              Kave
+              OTKUP
             </a>
           </li>
-          <li class="text-2xl p-4">
-            <a id="contact" on:click={() => isMenuOpen = false}
+          <li bind:this={zbrinjavanje} class="text-4xl p-4 border-y border-gray-300 w-full text-right">
+            <a on:click={() => isMenuOpen = false}
               href="/"
               class="nav-link"
             >
-              Kontakt
+              ZBRINJAVANJE
+            </a>
+          </li>
+          <li bind:this={kontakt} class="text-4xl p-4 border-y border-gray-300 w-full text-right">
+            <a on:click={() => isMenuOpen = false}
+              href="/"
+              class="nav-link"
+            >
+              KONTAKT
             </a>
           </li>
         </ul>
