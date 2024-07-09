@@ -83,7 +83,7 @@
             : "opacity-0 -translate-x-full"
         }`}
       >
-        <ul class="flex flex-col items-baseline w-full justify-end align-middle text-center font-light text-gray-500">
+        <ul class="flex flex-col items-baseline w-full justify-end align-middle text-center font-light text-gray-500 pb-20">
           <li bind:this={pocetna} class="text-5xl tracking-tighter p-4 border-y border-t-2 border-gray-300 w-full text-right">
             <a on:click={() => isMenuOpen = false}
               href="/"
@@ -115,7 +115,7 @@
               ZBRINJAVANJE
             </a>
           </li>
-          <li bind:this={kontakt} class="text-5xl p-4 tracking-tighter border-y border-gray-300 w-full text-right">
+          <li bind:this={kontakt} class="text-5xl p-4 tracking-tighter border-y border-b-2 border-gray-300 w-full text-right">
             <a on:click={() => isMenuOpen = false}
               href="/"
               class="nav-link"
