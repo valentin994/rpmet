@@ -82,11 +82,11 @@
 			</div>
 		</div>
 	</div>
-	<h1 class="text-4xl text-secondary font-extrabold text-center py-8 mt-12">NUDIMO USLUGE</h1>
+	<h1 class="text-3xl md:text-3xl text-primary font-extrabold text-center py-8 mt-12">NUDIMO USLUGE</h1>
 	<div class="flex flex-col lg:flex-row text-center pb-12 mb-12">
 		<div bind:this={zbrinjavanje} class="px-4 w-full">
 			<div
-				class="flex flex-col h-full align-middle justify-center border border-gray-200 rounded-md shadow-md p-4 bg-gray-100/25 my-4"
+				class="flex flex-col h-full align-middle justify-center border border-gray-200 rounded-md shadow-md p-4 bg-gray-100/25 hover:bg-gray-100/75 my-4"
 			>
 				<div class="flex justify-center">
 					<img class="max-w-16" src={Kanta} alt="Dollar" />
@@ -99,7 +99,7 @@
 		</div>
 		<div bind:this={otkup} class="px-4 w-full">
 			<div
-				class="flex flex-col h-full align-middle justify-center border border-gray-200 rounded-md shadow-md bg-gray-100/25 p-4 my-4"
+				class="flex flex-col h-full align-middle justify-center border border-gray-200 rounded-md shadow-md bg-gray-100/25 hover:bg-gray-100/75 p-4 my-4"
 			>
 				<div class="flex justify-center">
 					<img class="max-w-16" src={Dollar} alt="Dollar" />
@@ -112,7 +112,7 @@
 		</div>
 		<div bind:this={recikliraj} class="px-4 w-full">
 			<div
-				class="flex flex-col h-full align-middle justify-center border border-gray-200 rounded-md shadow-md p-4 bg-gray-100/25 my-4"
+				class="flex flex-col h-full align-middle justify-center border border-gray-200 rounded-md shadow-md p-4 bg-gray-100/25 hover:bg-gray-100/75 my-4"
 			>
 				<div class="flex justify-center">
 					<img class="max-w-16" src={Recycle} alt="Dollar" />

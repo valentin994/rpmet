@@ -14,19 +14,19 @@
         </div>
         <ul class="md:text-sm font-bold hidden md:block md:text-right">
             <li>
-                <a class="hover:text-secondary  transition-all duration-300 ease-in" href="/">POČETNA</a>
+                <a class="hover:text-primary  transition-all duration-300 ease-in" href="/">POČETNA</a>
             </li>
             <li>
-                <a class="hover:text-secondary  transition-all duration-300 ease-in" href="/">O NAMA</a>
+                <a class="hover:text-primary  transition-all duration-300 ease-in" href="/">O NAMA</a>
             </li>
             <li>
-                <a class="hover:text-secondary  transition-all duration-300 ease-in" href="/">OTKUP</a>
+                <a class="hover:text-primary  transition-all duration-300 ease-in" href="/">OTKUP</a>
             </li>
             <li>
-                <a class="hover:text-secondary transition-all duration-300 ease-in" href="/">ZBRINJAVANJE</a>
+                <a class="hover:text-primary transition-all duration-300 ease-in" href="/">ZBRINJAVANJE</a>
             </li>
             <li>
-                <a class="hover:text-secondary transition-all duration-300 ease-in" href="/">KONTAKT</a>
+                <a class="hover:text-primary transition-all duration-300 ease-in" href="/">KONTAKT</a>
             </li>
         </ul>
     </div>
