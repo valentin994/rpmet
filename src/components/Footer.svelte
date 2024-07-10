@@ -1,7 +1,7 @@
 <script>
     import Logo from "$lib/assets/logo.svg";
 </script>
-<div class="border-t bg-gray-300/25 p-8 md:p-20 lg:px-48 text-gray-400">
+<div class="border-t bg-gray-200/25 p-8 md:p-20 lg:px-48 text-gray-400">
     <div class="flex flex-col md:flex-row justify-center md:justify-between">
         <div class="flex justify-center">
             <img class="max-w-24" src={Logo} alt="Logo" /> 
