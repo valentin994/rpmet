@@ -8,7 +8,8 @@ export default {
                 sans: ['Inter var', ...defaultTheme.fontFamily.sans],
             },
             colors: {
-                primary: "#A3CC90"
+                primary: "#A3CC90",
+                secondary: "#E94F37"
             }
         },
   },
