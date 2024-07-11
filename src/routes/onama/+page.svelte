@@ -74,36 +74,36 @@
         <div class="flex flex-col justify-center">
             <h1 bind:this={osnovni} class="text-2xl md:text-3xl text-primary font-semibold pb-4 text-center md:text-left">OSNOVNI PODACI</h1>
             <div bind:this={oib} class="">
-                <p class="text-xl md:text-2xl text-gray-600 font-thin border-l-4 border-primary pl-2">OIB: <span class="text-gray-500 font-medium">00122099518</span></p>
+                <p class="text-lg md:text-xl text-gray-600 font-thin border-l-4 border-primary pl-2">OIB: <span class="text-gray-500 font-medium">00122099518</span></p>
             </div>
             <div bind:this={mbroj} class="pt-1">
-                <p class="text-xl md:text-2xl text-gray-600 font-thin border-l-4 border-primary pl-2">Matični broj: <span class="text-gray-500 font-medium">4593502</span></p>
+                <p class="text-lg md:text-xl text-gray-600 font-thin border-l-4 border-primary pl-2">Matični broj: <span class="text-gray-500 font-medium">4593502</span></p>
             </div>
             <div bind:this={mbs} class="pt-1">
-                <p class="text-xl md:text-2xl text-gray-600 font-thin border-l-4 border-primary pl-2">MBS: <span class="text-gray-500 font-medium">010098590</span></p>
+                <p class="text-lg md:text-xl text-gray-600 font-thin border-l-4 border-primary pl-2">MBS: <span class="text-gray-500 font-medium">010098590</span></p>
             </div>
             <div bind:this={iban} class="pt-1">
-                <p class="text-xl md:text-2xl text-gray-600 font-thin border-l-4 border-primary pl-2 text-md">IBAN: <span class="text-gray-500 font-medium">HR6224840081135224571</span></p>
+                <p class="text-lg md:text-xl text-gray-600 font-thin border-l-4 border-primary pl-2">IBAN: <span class="text-gray-500 font-medium">HR6224840081135224571</span></p>
             </div>
             <div bind:this={swift} class="pt-1">
-                <p class="text-xl md:text-2xl text-gray-600 font-thin border-l-4 border-primary pl-2">SWIFT: <span class="text-gray-500 font-medium">RZBHHR2X</span></p>
+                <p class="text-lg md:text-xl text-gray-600 font-thin border-l-4 border-primary pl-2">SWIFT: <span class="text-gray-500 font-medium">RZBHHR2X</span></p>
             </div>
         </div>
         <div class="flex flex-col justify-center">
             <h1 bind:this={uprava} class="text-2xl md:text-3xl text-primary font-semibold pb-4 pt-8 text-center md:text-left">ČLANOVI UPRAVE I DIREKTOR</h1>
             <div bind:this={direktor} class="">
-                <p class="text-xl md:text-2xl text-gray-600 font-thin border-l-4 border-primary pl-2">Dubravko <span class="text-gray-500 font-medium">CVETEK</span></p>
+                <p class="text-lg md:text-xl text-gray-600 font-thin border-l-4 border-primary pl-2">Dubravko <span class="text-gray-500 font-medium">Cvetek</span></p>
             </div>
 
             <h1 bind:this={radno_vrijeme} class="text-2xl md:text-3xl text-primary font-semibold pt-8 pb-4 text-center md:text-left">RADNO VRIJEME</h1>
             <div bind:this={radni} class="">
-                <p class="text-xl md:text-2xl text-gray-600 font-thin border-l-4 border-primary pl-2">Radni dan: <span class="text-gray-500 font-medium">08-16h</span></p>
+                <p class="text-lg md:text-xl text-gray-600 font-thin border-l-4 border-primary pl-2">Radni dan: <span class="text-gray-500 font-medium">08-16h</span></p>
             </div>
             <div bind:this={subota} class="pt-1">
-                <p class="text-xl md:text-2xl text-gray-600 font-thin border-l-4 border-primary pl-2">Subota: <span class="text-gray-500 font-medium">08-12h</span></p>
+                <p class="text-lg md:text-xl text-gray-600 font-thin border-l-4 border-primary pl-2">Subota: <span class="text-gray-500 font-medium">08-12h</span></p>
             </div>
             <div bind:this={nedjelja} class="pt-1">
-                <p class="text-xl md:text-2xl text-gray-600 font-thin border-l-4 border-primary pl-2">Nedjelja: <span class="text-gray-500 font-medium">Ne radimo!</span></p>
+                <p class="text-lg md:text-xl text-gray-600 font-thin border-l-4 border-primary pl-2">Nedjelja: <span class="text-gray-500 font-medium">Ne radimo!</span></p>
             </div>
         </div>
     </div>
