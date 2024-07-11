@@ -33,13 +33,13 @@
 			}, 1000);
 		});
 		inView(zbrinjavanje, () => {
-			animate(zbrinjavanje, { opacity: [0, 100], y: [100, 0] }, { duration: 1, easing: 'ease-in' });
+			animate(zbrinjavanje, { opacity: [0, 1], y: [100, 0] }, { duration: 1, easing: 'ease-in' });
 		});
 		inView(otkup, () => {
-			animate(otkup, { opacity: [0, 100], y: [100, 0] }, { duration: 1, easing: 'ease-in' });
+			animate(otkup, { opacity: [0, 1], y: [100, 0] }, { duration: 1, easing: 'ease-in' });
 		});
 		inView(recikliraj, () => {
-			animate(recikliraj, { opacity: [0, 100], y: [100, 0] }, { duration: 1, easing: 'ease-in' });
+			animate(recikliraj, { opacity: [0, 1], y: [100, 0] }, { duration: 1, easing: 'ease-in' });
 		});
 	});
 </script>

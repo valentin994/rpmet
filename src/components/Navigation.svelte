@@ -32,11 +32,12 @@
         <div class="text-gray-500 hidden md:max-[4200px]:block md:text-md z-20">
           <ul class="flex h-full">
             <li class="px-2 py-6 ">
-              <a href="/" class={`font-bold transition-all duration-300 ease-in hover:text-gray-300 ${href.includes("/") ?
-              "text-primary" : ""}`}  class:active="{href.includes('/')}">POČETNA</a>
+              <a href="/" class={`font-bold transition-all duration-300 ease-in hover:text-gray-300 ${href==="/" ?
+              "text-primary" : ""}`}>POČETNA</a>
             </li>
             <li class="px-2 py-6">
-              <a href="/" class="font-bold transition-all duration-300 ease-in hover:text-gray-300">O NAMA</a>
+              <a href="/onama" class={`font-bold transition-all duration-300 ease-in hover:text-gray-300 ${href.includes("/onama") ?
+              "text-primary" : ""}`} >O NAMA</a>
             </li>
             <li class="px-2 py-6 ">
               <a href="/" class="font-bold transition-all duration-300 ease-in hover:text-gray-300">OTKUP</a>
@@ -93,7 +94,7 @@
           </li>
           <li bind:this={onama} class=" tracking-tighter text-5xl p-4 border-y border-gray-300 w-full text-right">
             <a on:click={() => isMenuOpen = false}
-              href="/"
+              href="/onama"
               class="nav-link"
             >
               O NAMA
