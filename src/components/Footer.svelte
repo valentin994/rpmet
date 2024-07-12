@@ -20,7 +20,7 @@
                 <a class="hover:text-primary  transition-all duration-300 ease-in" href="/onama">O NAMA</a>
             </li>
             <li>
-                <a class="hover:text-primary  transition-all duration-300 ease-in" href="/">OTKUP</a>
+                <a class="hover:text-primary  transition-all duration-300 ease-in" href="/otkup">OTKUP</a>
             </li>
             <li>
                 <a class="hover:text-primary transition-all duration-300 ease-in" href="/">ZBRINJAVANJE</a>

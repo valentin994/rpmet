@@ -40,7 +40,8 @@
               "text-primary" : ""}`} >O NAMA</a>
             </li>
             <li class="px-2 py-6 ">
-              <a href="/" class="font-bold transition-all duration-300 ease-in hover:text-gray-300">OTKUP</a>
+              <a href="/otkup" class={`font-bold transition-all duration-300 ease-in hover:text-gray-300 ${href.includes("/otkup") ?
+              "text-primary" : ""}`}>OTKUP</a>
             </li>
             <li class="px-2 py-6">
               <a href="/" class="font-bold transition-all duration-300 ease-in hover:text-gray-300">ZBRINJAVANJE</a>
@@ -102,7 +103,7 @@
           </li>
           <li bind:this={otkup} class="text-5xl tracking-tighter p-4 border-y border-gray-300 w-full text-right">
             <a on:click={() => isMenuOpen = false}
-              href="/"
+              href="/otkup"
               class="nav-link"
             >
               OTKUP
