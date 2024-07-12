@@ -1,11 +1,14 @@
 <script>
     import PlavaKanta from "$lib/assets/plava_kanta.png"
+    import Europe from "$lib/assets/europe.jpg"
     import { inView, animate } from "motion";
     import { onMount } from "svelte";
 
     let about, plava_kanta;
     let osnovni, uprava, radno_vrijeme;
     let oib, mbroj, mbs, iban, swift, direktor, radni, subota, nedjelja; 
+
+    let recikliraj, reciklirajText, listaFirst, listaSecond, listaThird, listaFourth, misija, vizija;
 
     onMount(() => {
         inView(about, ()=> {
@@ -28,16 +31,16 @@
         inView(oib, ()=> {
             animate(oib, {x:[-100, 0], opacity: [0, 1]}, {duration: 0.7, easing: "ease-in"})
         })
-        inView(mbroj, ()=> {
+        inView(oib, ()=> {
             animate(mbroj, {x:[-100, 0], opacity: [0, 1]}, {duration: 0.7, easing: "ease-in", delay: 0.2})
         })
-        inView(mbs, ()=> {
+        inView(oib, ()=> {
             animate(mbs, {x:[-100, 0], opacity: [0, 1]}, {duration: 0.7, easing: "ease-in", delay:0.4})
         })
-        inView(iban, ()=> {
+        inView(oib, ()=> {
             animate(iban, {x:[-100, 0], opacity: [0, 1]}, {duration: 0.7, easing: "ease-in", delay: 0.6})
         })
-        inView(swift, ()=> {
+        inView(oib, ()=> {
             animate(swift, {x:[-100, 0], opacity: [0, 1]}, {duration: 0.7, easing: "ease-in", delay: 0.8})
         })
 
@@ -53,6 +56,34 @@
         })
         inView(nedjelja, ()=> {
             animate(nedjelja, {x:[100, 0], opacity: [0, 1]}, {duration: 0.7, easing: "ease-in", delay: 0.6})
+        })
+
+        inView(recikliraj, () => {
+            animate(recikliraj, {y:[50,0], opacity: [0,1]}, {duration: 0.7, easing:"ease-in"})
+        })
+
+        inView(reciklirajText, () => {
+            animate(reciklirajText, {y:[25,0], opacity: [0,1]}, {duration: 0.7, easing:"ease-in"})
+        })
+
+        inView(listaFirst, () => {
+            animate(listaFirst, {x:[25,0], opacity: [0,1]}, {duration: 0.7, easing:"ease-in"})
+        })
+        inView(listaFirst, () => {
+            animate(listaSecond, {x:[25,0], opacity: [0,1]}, {duration: 0.7, easing:"ease-in", delay: 0.1})
+        })
+        inView(listaFirst, () => {
+            animate(listaThird, {x:[25,0], opacity: [0,1]}, {duration: 0.7, easing:"ease-in", delay: 0.2})
+        })
+        inView(listaFirst, () => {
+            animate(listaFourth, {x:[25,0], opacity: [0,1]}, {duration: 0.7, easing:"ease-in", delay: 0.3})
+        })
+
+        inView(misija, () => {
+            animate(misija, {x:[-50,0], opacity: [0,1]}, {duration: 0.7, easing:"ease-in"})
+        })
+        inView(vizija, () => {
+            animate(vizija, {x:[50,0], opacity: [0,1]}, {duration: 0.7, easing:"ease-in"})
         })
     })
 </script>
@@ -107,5 +138,62 @@
             </div>
         </div>
     </div>
+</div>
+<hr class="w-8 h-2 mx-auto mt-8 bg-primary border-0 rounded md:mt-12">
+<div class="px-8 md:px-20 xl:px-60 py-8 md:pt-16 md:pb-24">
+    <h1 bind:this={recikliraj} class="text-2xl mx-auto md:text-4xl text-primary font-extrabold">RECIKLIRAJ I PROFITIRAJ</h1>
+    <div class="flex flex-col md:flex-row grow pt-4 md:text-xl">
+        <div bind:this={reciklirajText} class="w-full md:pr-28 mb-4">
+            <p class="text-gray-700">Odvojeno sakupljanje otpada i recikliranje osnove su modernog upravljanja otpadom jer na taj način štedimo prirodne resurse, smanjujemo gomilanje otpada na odlagalištima i štitimo okoliš. RP MET d.o.o je tvrtka spacijalizirana za trgovanje I preradu metalnog otpada. Posjedujemo škare za rezanje metala, strojeve  za obradu bakrenih kablova. Otkpljujemo metalni otpad koji sortiramo i pripremamo za reciklažu i novi proces proizvodnje.</p>
+        </div>
+        <div class="flex flex-col w-full items-end justify-center">
+            <div bind:this={listaFirst} class="flex w-full ">
+                <svg aria-hidden="true" viewBox="0 0 32 32" class="h-8 w-8 flex-none fill-primary"><path d="M11.83 15.795a1 1 0 0 0-1.66 1.114l1.66-1.114Zm9.861-4.072a1 1 0 1 0-1.382-1.446l1.382 1.446ZM14.115 21l-.83.557a1 1 0 0 0 1.784-.258L14.115 21Zm.954.3c1.29-4.11 3.539-6.63 6.622-9.577l-1.382-1.446c-3.152 3.013-5.704 5.82-7.148 10.424l1.908.598Zm-4.9-4.391 3.115 4.648 1.661-1.114-3.114-4.648-1.662 1.114Z"></path></svg>
+                <p class="text-gray-700 align-top my-auto">Recikliranje pridonosi očuvanju vrijednih prirodnih resursa</p> 
+            </div>
+            <div bind:this={listaSecond} class="flex w-full">
+                <svg aria-hidden="true" viewBox="0 0 32 32" class="h-8 w-8 flex-none fill-primary"><path d="M11.83 15.795a1 1 0 0 0-1.66 1.114l1.66-1.114Zm9.861-4.072a1 1 0 1 0-1.382-1.446l1.382 1.446ZM14.115 21l-.83.557a1 1 0 0 0 1.784-.258L14.115 21Zm.954.3c1.29-4.11 3.539-6.63 6.622-9.577l-1.382-1.446c-3.152 3.013-5.704 5.82-7.148 10.424l1.908.598Zm-4.9-4.391 3.115 4.648 1.661-1.114-3.114-4.648-1.662 1.114Z"></path></svg>
+                <p class="text-gray-700 align-top my-auto">Recikliranje štedi energiju</p> 
+            </div>
+            <div bind:this={listaThird} class="flex w-full">
+                <svg aria-hidden="true" viewBox="0 0 32 32" class="h-8 w-8 flex-none fill-primary"><path d="M11.83 15.795a1 1 0 0 0-1.66 1.114l1.66-1.114Zm9.861-4.072a1 1 0 1 0-1.382-1.446l1.382 1.446ZM14.115 21l-.83.557a1 1 0 0 0 1.784-.258L14.115 21Zm.954.3c1.29-4.11 3.539-6.63 6.622-9.577l-1.382-1.446c-3.152 3.013-5.704 5.82-7.148 10.424l1.908.598Zm-4.9-4.391 3.115 4.648 1.661-1.114-3.114-4.648-1.662 1.114Z"></path></svg>
+                <p class="text-gray-700 align-top my-auto">Recikliranje smanjuje gomilanje otpada na odlagalištima</p> 
+            </div>
+            <div bind:this={listaFourth} class="flex w-full">
+                <svg aria-hidden="true" viewBox="0 0 32 32" class="h-8 w-8 flex-none fill-primary"><path d="M11.83 15.795a1 1 0 0 0-1.66 1.114l1.66-1.114Zm9.861-4.072a1 1 0 1 0-1.382-1.446l1.382 1.446ZM14.115 21l-.83.557a1 1 0 0 0 1.784-.258L14.115 21Zm.954.3c1.29-4.11 3.539-6.63 6.622-9.577l-1.382-1.446c-3.152 3.013-5.704 5.82-7.148 10.424l1.908.598Zm-4.9-4.391 3.115 4.648 1.661-1.114-3.114-4.648-1.662 1.114Z"></path></svg>
+                <p class="text-gray-700 align-top my-auto">Recikliranjem štedimo novac i otvaramo nova radna mjesta.</p> 
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col md:flex-row pt-8">
+        <div class="flex flex-col h-full mb-8 md:pr-8 lg:pr-32">
+            <div bind:this={misija} class="w-full border border-gray-200 bg-white hover:bg-gray-100/25 shadow-md rounded-md pt-4 px-4 md:px-8 pb-8 h-full">
+                <h2 class="text-2xl md:text-4xl tracking-widest text-primary font-light pb-2">MISIJA</h2>
+                <p class="md:text-xl font-light">
+                    Pružati građanima I tvrtkama pouzdanog I nezamjenjivog partnera u području reciklaže I gospodarenja otpadom.
+                </p>
+            </div>
+        </div>
+        <div bind:this={vizija} class="flex flex-col h-full md:pr-8 lg:pr-32">
+            <div class="w-full border border-gray-200 bg-white shadow-md rounded-md hover:bg-gray-100/25 pt-4 px-4 md:px-8 pb-8 h-full">
+                <h2 class="text-2xl md:text-4xl tracking-widest font-light text-primary pb-2">VIZIJA</h2>
+                <p class="md:text-xl font-light">
+                    Postati vodeća tvrtka u trgovini metalnim otpadom u regiji te konkurentar partner u usluzi reciklaže svih vrsta otpada. 
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-white flex flex-col lg:flex-row justify-between p-16 border-t">
+    <div class="mb-16 mx-auto lg:my-auto">
+        <img src="https://hamagbicro.hr/wp-content/uploads/2017/08/logo-hamag.png" alt="HAMAG" />
+    </div>
+    <div class="mb-16 mx-auto lg:my-auto md:max-w-[300px]">
+        <img class="" src={Europe} alt="EU" />
+    </div>
+    <div class="mx-auto lg:my-auto">
+        <img class="" src="https://strukturnifondovi.hr/wp-content/uploads/2018/05/ESIF-Logo.png" alt="EU" />
+    </div>
+
 </div>
 

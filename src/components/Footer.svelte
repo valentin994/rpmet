@@ -17,7 +17,7 @@
                 <a class="hover:text-primary  transition-all duration-300 ease-in" href="/">POČETNA</a>
             </li>
             <li>
-                <a class="hover:text-primary  transition-all duration-300 ease-in" href="/">O NAMA</a>
+                <a class="hover:text-primary  transition-all duration-300 ease-in" href="/onama">O NAMA</a>
             </li>
             <li>
                 <a class="hover:text-primary  transition-all duration-300 ease-in" href="/">OTKUP</a>
