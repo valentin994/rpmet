@@ -6,7 +6,7 @@
 
     let about, plava_kanta;
     let osnovni, uprava, radno_vrijeme;
-    let oib, mbroj, mbs, iban, swift, direktor, radni, subota, nedjelja; 
+    let oib, mbroj, mbs, iban, ibanSecond, swift, direktor, radni, subota, nedjelja, temeljniKapital; 
 
     let recikliraj, reciklirajText, listaFirst, listaSecond, listaThird, listaFourth, misija, vizija;
 
@@ -41,7 +41,13 @@
             animate(iban, {x:[-100, 0], opacity: [0, 1]}, {duration: 0.7, easing: "ease-in", delay: 0.6})
         })
         inView(oib, ()=> {
-            animate(swift, {x:[-100, 0], opacity: [0, 1]}, {duration: 0.7, easing: "ease-in", delay: 0.8})
+            animate(ibanSecond, {x:[-100, 0], opacity: [0, 1]}, {duration: 0.7, easing: "ease-in", delay: 0.8})
+        })
+        inView(oib, ()=> {
+            animate(swift, {x:[-100, 0], opacity: [0, 1]}, {duration: 0.7, easing: "ease-in", delay: 1})
+        })
+        inView(oib, ()=> {
+            animate(temeljniKapital, {x:[-100, 0], opacity: [0, 1]}, {duration: 0.7, easing: "ease-in", delay: 1.2})
         })
 
 
@@ -116,8 +122,14 @@
             <div bind:this={iban} class="pt-1">
                 <p class="text-lg md:text-xl text-gray-600 font-thin border-l-4 border-primary pl-2">IBAN: <span class="text-gray-500 font-medium">HR6224840081135224571</span></p>
             </div>
+            <div bind:this={ibanSecond} class="pt-1">
+                <p class="text-lg md:text-xl text-gray-600 font-thin border-l-4 border-primary pl-2">IBAN: <span class="text-gray-500 font-medium">HR8723400091111270142</span></p>
+            </div>
             <div bind:this={swift} class="pt-1">
                 <p class="text-lg md:text-xl text-gray-600 font-thin border-l-4 border-primary pl-2">SWIFT: <span class="text-gray-500 font-medium">RZBHHR2X</span></p>
+            </div>
+            <div bind:this={temeljniKapital} class="pt-1">
+                <p class="text-lg md:text-xl text-gray-600 font-thin border-l-4 border-primary pl-2">Temeljni kapital: <span class="text-gray-500 font-medium">€ 2.654</span></p>
             </div>
         </div>
         <div class="flex flex-col justify-center">
