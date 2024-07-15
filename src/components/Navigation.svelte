@@ -47,7 +47,8 @@
               <a href="/" class="font-bold transition-all duration-300 ease-in hover:text-gray-300">ZBRINJAVANJE</a>
             </li>
             <li class="px-2 py-6">
-              <a href="/" class="font-bold transition-all duration-300 ease-in hover:text-gray-200">KONTAKT</a>
+              <a href="/kontakt" class={`font-bold transition-all duration-300 ease-in hover:text-gray-300 ${href.includes("/kontakt") ?
+              "text-primary" : ""}`}>KONTAKT</a>
             </li>
           </ul>
         </div>
@@ -96,7 +97,6 @@
           <li bind:this={onama} class=" tracking-tighter text-5xl p-4 border-y border-gray-300 w-full text-right">
             <a on:click={() => isMenuOpen = false}
               href="/onama"
-              class="nav-link"
             >
               O NAMA
             </a>
@@ -104,7 +104,6 @@
           <li bind:this={otkup} class="text-5xl tracking-tighter p-4 border-y border-gray-300 w-full text-right">
             <a on:click={() => isMenuOpen = false}
               href="/otkup"
-              class="nav-link"
             >
               OTKUP
             </a>
@@ -112,15 +111,13 @@
           <li bind:this={zbrinjavanje} class="text-5xl tracking-tighter p-4 border-y border-gray-300 w-full text-right">
             <a on:click={() => isMenuOpen = false}
               href="/"
-              class="nav-link"
             >
               ZBRINJAVANJE
             </a>
           </li>
           <li bind:this={kontakt} class="text-5xl p-4 tracking-tighter border-y border-b-2 border-gray-300 w-full text-right">
             <a on:click={() => isMenuOpen = false}
-              href="/"
-              class="nav-link"
+              href="/kontakt"
             >
               KONTAKT
             </a>
