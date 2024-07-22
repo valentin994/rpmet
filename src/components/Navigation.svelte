@@ -87,7 +87,7 @@
             : "opacity-0 -translate-x-full"
         }`}
       >
-        <ul class="flex flex-col items-baseline w-full justify-end align-middle text-center font-light text-gray-500 pb-20">
+        <ul class="flex flex-col items-baseline w-full justify-end align-middle text-center font-light text-gray-500 pb-36">
           <li bind:this={pocetna} class="text-5xl tracking-tighter p-4 border-y border-t-2 border-gray-300 w-full text-right">
             <a on:click={() => isMenuOpen = false}
               href="/"
