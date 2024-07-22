@@ -1,9 +1,38 @@
 <script>
     import { inView, animate } from "motion";
     import { onMount } from "svelte";
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
     let heading;
-    let account, metal, cijena;
-    let firstImg, secondImg, thirdImg, fourthImg;
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let account
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let metal
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let cijena;
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let firstImg
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let secondImg
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let thirdImg
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let fourthImg;
 
     onMount(() => {
         inView(heading, () => {

@@ -31,7 +31,7 @@
 </script>
 <div  class="py-8 bg-[url('/zbrinjavanje_sm.jpg')] md:bg-[url('/zbrinjavanje_lg.jpg')] bg-cover bg-no-repeat">
     <div class="px-4 md:px-20 lg:px-48 flex items-end flex-col justify-center min-h-[500px]">
-        <div bind:this={header} class="lg:max-w-[500px] bg-gray-50/95 p-4 rounded-md shadow-md">
+        <div bind:this={header} class="lg:max-w-[500px] bg-gray-50/95 p-4 md:p-8 rounded-md shadow-md">
             <h1 class="text-3xl lg:text-5xl text-primary">
                 Zbrinjavanje otpada vršimo uz naknadu ili bez naknade ovisno o kojem se otpadu radi.
             </h1>
@@ -42,7 +42,7 @@
 
 <div bind:this={list} class="px-4 md:px-20 lg:px-48 pb-16">
     <div class="grid md:grid-cols-3 gap-6">
-        <div class="pl-4 border shadow-md bg-300/25 rounded-md h-32">
+        <div class="pl-4 border shadow-md bg-300/25 rounded-md h-32 cursor-pointer hover:bg-gray-100/95">
             <div class="flex align-middle justify-between h-full">
                 <p class="flex flex-col justify-center text-xl md:text-2xl text-gray-600">Otpadna plastika i guma</p>
                 <div class="w-36 ">
@@ -51,7 +51,7 @@
             </div>
         </div>
 
-        <div class="pl-4 border shadow-md bg-300/25 rounded-md h-32">
+        <div class="pl-4 border shadow-md bg-300/25 rounded-md h-32 cursor-pointer hover:bg-gray-100/95">
             <div class="flex align-middle justify-between h-full">
                 <p class="flex flex-col justify-center text-xl md:text-2xl text-gray-600">Otpadni papir i karton</p>
                 <div class="w-36 flex flex-col">
@@ -59,7 +59,7 @@
                 </div>
             </div>
         </div>
-        <div class="pl-4 border shadow-md bg-300/25 rounded-md h-32">
+        <div class="pl-4 border shadow-md bg-300/25 rounded-md h-32 cursor-pointer hover:bg-gray-100/95">
             <div class="flex align-middle justify-between h-full">
                 <p class="flex flex-col justify-center text-xl md:text-2xl text-gray-600">Otpadno drvo</p>
                 <div class="w-36 flex flex-col">
@@ -67,7 +67,7 @@
                 </div>
             </div>
         </div>
-        <div class="pl-4 border shadow-md bg-300/25 rounded-md h-32">
+        <div class="pl-4 border shadow-md bg-300/25 rounded-md h-32 cursor-pointer hover:bg-gray-100/95">
             <div class="flex align-middle justify-between h-full">
                 <p class="flex flex-col justify-center text-xl md:text-2xl text-gray-600">Građevinski otpad</p>
                 <div class="w-36 flex flex-col">
@@ -75,7 +75,7 @@
                 </div>
             </div>
         </div>
-        <div class="pl-4 border shadow-md bg-300/25 rounded-md h-32">
+        <div class="pl-4 border shadow-md bg-300/25 rounded-md h-32 cursor-pointer hover:bg-gray-100/95">
             <div class="flex align-middle justify-between h-full">
                 <p class="flex flex-col justify-center text-xl md:text-2xl text-gray-600">Otpadno staklo</p>
                 <div class="w-36 flex flex-col">
@@ -83,7 +83,7 @@
                 </div>
             </div>
         </div>
-        <div class="pl-4 border shadow-md bg-300/25 rounded-md h-32">
+        <div class="pl-4 border shadow-md bg-300/25 rounded-md h-32 cursor-pointer hover:bg-gray-100/95">
             <div class="flex align-middle justify-between h-full">
                 <p class="flex flex-col justify-center text-xl md:text-2xl text-gray-600">Elektronički otpad</p>
                 <div class="w-36 flex flex-col">
