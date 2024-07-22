@@ -38,7 +38,9 @@
         </div>
     </div>
 </div>
-<div bind:this={list} class="px-4 md:px-20 lg:px-48 py-36">
+<hr class="w-8 h-2 mx-auto my-8 bg-primary border-0 rounded md:my-16">
+
+<div bind:this={list} class="px-4 md:px-20 lg:px-48 pb-16">
     <div class="grid md:grid-cols-3 gap-6">
         <div class="pl-4 border shadow-md bg-300/25 rounded-md h-32">
             <div class="flex align-middle justify-between h-full">

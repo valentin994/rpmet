@@ -4,11 +4,102 @@
     import { inView, animate } from "motion";
     import { onMount } from "svelte";
 
-    let about, plava_kanta;
-    let osnovni, uprava, radno_vrijeme;
-    let oib, mbroj, mbs, iban, ibanSecond, swift, direktor, radni, subota, nedjelja, temeljniKapital; 
-
-    let recikliraj, reciklirajText, listaFirst, listaSecond, listaThird, listaFourth, misija, vizija;
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let about; 
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let plava_kanta;
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let osnovni;
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let uprava; 
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let radno_vrijeme;
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let oib;
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let mbroj; 
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let mbs;
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let iban; 
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let ibanSecond; 
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let swift; 
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let direktor; 
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let radni;
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let subota;
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let nedjelja; 
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let temeljniKapital; 
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let recikliraj; 
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let reciklirajText; 
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let listaFirst; 
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let listaSecond; 
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let listaThird; 
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let listaFourth; 
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let misija; 
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let vizija;
 
     onMount(() => {
         inView(about, ()=> {
