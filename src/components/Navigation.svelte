@@ -44,7 +44,8 @@
               "text-primary" : ""}`}>OTKUP</a>
             </li>
             <li class="px-2 py-6">
-              <a href="/" class="font-bold transition-all duration-300 ease-in hover:text-gray-300">ZBRINJAVANJE</a>
+              <a href="/zbrinjavanje" class={`font-bold transition-all duration-300 ease-in hover:text-gray-300 ${href.includes("/zbrinjavanje") ?
+              "text-primary" : ""}`}>ZBRINJAVANJE</a>
             </li>
             <li class="px-2 py-6">
               <a href="/kontakt" class={`font-bold transition-all duration-300 ease-in hover:text-gray-300 ${href.includes("/kontakt") ?
@@ -110,7 +111,7 @@
           </li>
           <li bind:this={zbrinjavanje} class="text-5xl tracking-tighter p-4 border-y border-gray-300 w-full text-right">
             <a on:click={() => isMenuOpen = false}
-              href="/"
+              href="/zbrinjavanje"
             >
               ZBRINJAVANJE
             </a>
