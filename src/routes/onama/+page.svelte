@@ -234,7 +234,7 @@
                 <p class="text-lg md:text-xl text-gray-600 font-thin border-l-4 border-primary pl-2">IBAN: <span class="text-gray-500 font-medium">HR8723400091111270142</span></p>
             </div>
             <div bind:this={swift_second} class="pt-1">
-                <p class="text-lg md:text-xl text-gray-600 font-thin border-l-4 border-primary pl-2">SWIFT: <span class="text-gray-500 font-medium">RZBHHR2X</span></p>
+                <p class="text-lg md:text-xl text-gray-600 font-thin border-l-4 border-primary pl-2">SWIFT: <span class="text-gray-500 font-medium">PBZGHR2X</span></p>
             </div>
             <div bind:this={temeljniKapital} class="pt-1">
                 <p class="text-lg md:text-xl text-gray-600 font-thin border-l-4 border-primary pl-2">Temeljni kapital: <span class="text-gray-500 font-medium">€ 2.654,45</span></p>
