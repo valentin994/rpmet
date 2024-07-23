@@ -131,6 +131,7 @@
         text-gray-50 bg-cover hover:scale-105 transition-all min-h-[250px] lg:min-h-[500px] duration-200 ease-in flex flex-col justify-center items-center group
         ">
             <h1 class="text-2xl lg:text-4xl font-bold lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in uppercase">Elektronički otpad</h1>
+            <p class="p-8 lg:text-xl lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in font-extrabold text-center">Bijela tehnika, procesori, matične pločice, RAM, tiskane pločice 'PCB', mobiteli</p>
     </div>
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <!-- svelte-ignore a11y-no-static-element-interactions -->
@@ -153,7 +154,7 @@
         text-gray-50 bg-cover hover:scale-105 transition-all duration-200 ease-in min-h-[250px] lg:min-h-[500px] flex flex-col justify-center items-center group
         ">
             <h1 class="text-2xl lg:text-4xl font-bold lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in uppercase">SPECIJALNI MATERIJALI</h1>
-            <p class="p-8 lg:text-xl lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in font-extrabold text-center">Specijalne legure koje sadrže rijetke metale na bazi nikla nnjegove legure, molija, wolframa, kobalta (HSS, Hard metal, Inkonel, Hatsellroy, itd..)</p>
+            <p class="p-8 lg:text-xl lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in font-extrabold text-center">Specijalne legure koje sadrže rijetke metale na bazi nikla njegove legure, molija, wolframa, kobalta (HSS, Hard metal, Inkonel, Hatsellroy, itd..)</p>
     </div>
 </div>
     <div class="flex flex-col justify-between lg:flex-row text-xl md:text-xl text-gray-500 text-center pt-8 pb-16">
