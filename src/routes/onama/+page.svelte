@@ -51,7 +51,15 @@
     /**
 	 * @type {import("motion").ElementOrSelector}
 	 */
+    let swift_second; 
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
     let direktor; 
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let dominik; 
     /**
 	 * @type {import("motion").ElementOrSelector}
 	 */
@@ -138,12 +146,18 @@
             animate(swift, {x:[-100, 0], opacity: [0, 1]}, {duration: 0.7, easing: "ease-in", delay: 1})
         })
         inView(oib, ()=> {
-            animate(temeljniKapital, {x:[-100, 0], opacity: [0, 1]}, {duration: 0.7, easing: "ease-in", delay: 1.2})
+            animate(swift_second, {x:[-100, 0], opacity: [0, 1]}, {duration: 0.7, easing: "ease-in", delay: 1.2})
+        })
+        inView(oib, ()=> {
+            animate(temeljniKapital, {x:[-100, 0], opacity: [0, 1]}, {duration: 0.7, easing: "ease-in", delay: 1.4})
         })
 
 
         inView(direktor, ()=> {
             animate(direktor, {x:[100, 0], opacity: [0, 1]}, {duration: 0.7, easing: "ease-in"})
+        })
+        inView(dominik, ()=> {
+            animate(dominik, {x:[100, 0], opacity: [0, 1]}, {duration: 0.7, easing: "ease-in"})
         })
         inView(radni, ()=> {
             animate(radni, {x:[100, 0], opacity: [0, 1]}, {duration: 0.7, easing: "ease-in", delay: 0.2})
@@ -213,20 +227,27 @@
             <div bind:this={iban} class="pt-1">
                 <p class="text-lg md:text-xl text-gray-600 font-thin border-l-4 border-primary pl-2">IBAN: <span class="text-gray-500 font-medium">HR6224840081135224571</span></p>
             </div>
-            <div bind:this={ibanSecond} class="pt-1">
-                <p class="text-lg md:text-xl text-gray-600 font-thin border-l-4 border-primary pl-2">IBAN: <span class="text-gray-500 font-medium">HR8723400091111270142</span></p>
-            </div>
             <div bind:this={swift} class="pt-1">
                 <p class="text-lg md:text-xl text-gray-600 font-thin border-l-4 border-primary pl-2">SWIFT: <span class="text-gray-500 font-medium">RZBHHR2X</span></p>
             </div>
+            <div bind:this={ibanSecond} class="pt-1">
+                <p class="text-lg md:text-xl text-gray-600 font-thin border-l-4 border-primary pl-2">IBAN: <span class="text-gray-500 font-medium">HR8723400091111270142</span></p>
+            </div>
+            <div bind:this={swift_second} class="pt-1">
+                <p class="text-lg md:text-xl text-gray-600 font-thin border-l-4 border-primary pl-2">SWIFT: <span class="text-gray-500 font-medium">RZBHHR2X</span></p>
+            </div>
             <div bind:this={temeljniKapital} class="pt-1">
-                <p class="text-lg md:text-xl text-gray-600 font-thin border-l-4 border-primary pl-2">Temeljni kapital: <span class="text-gray-500 font-medium">€ 2.654</span></p>
+                <p class="text-lg md:text-xl text-gray-600 font-thin border-l-4 border-primary pl-2">Temeljni kapital: <span class="text-gray-500 font-medium">€ 2.654,45</span></p>
             </div>
         </div>
         <div class="flex flex-col justify-center">
-            <h1 bind:this={uprava} class="text-2xl md:text-3xl text-primary font-semibold pb-4 pt-8 text-center md:text-left">ČLANOVI UPRAVE I DIREKTOR</h1>
+            <h1 bind:this={uprava} class="text-2xl md:text-3xl text-primary font-semibold pb-4 pt-8 text-center md:text-left">OSOBE OVLASTENE ZA ZASTUPANJE</h1>
             <div bind:this={direktor} class="">
                 <p class="text-lg md:text-xl text-gray-600 font-thin border-l-4 border-primary pl-2">Dubravko <span class="text-gray-500 font-medium">Cvetek</span></p>
+            </div>
+
+            <div bind:this={dominik} class="pt-1">
+                <p class="text-lg md:text-xl text-gray-600 font-thin border-l-4 border-primary pl-2">Dominik <span class="text-gray-500 font-medium">Cvetek</span></p>
             </div>
 
             <h1 bind:this={radno_vrijeme} class="text-2xl md:text-3xl text-primary font-semibold pt-8 pb-4 text-center md:text-left">RADNO VRIJEME</h1>
@@ -281,10 +302,15 @@
             <div class="w-full border border-gray-200 bg-white shadow-md rounded-md hover:bg-gray-100/25 pt-4 px-4 md:px-8 pb-8 h-full">
                 <h2 class="text-2xl md:text-4xl tracking-widest font-light text-primary pb-2">VIZIJA</h2>
                 <p class="md:text-xl font-light">
-                    Postati vodeća tvrtka u trgovini metalnim otpadom u regiji te konkurentar partner u usluzi reciklaže svih vrsta otpada. 
+                    Postati vodeća tvrtka u trgovini metalnim otpadom u regiji te konkurentan partner u usluzi reciklaže svih vrsta otpada. 
                 </p>
             </div>
         </div>
+    </div>
+    <div>
+        <p class="text-gray-500 pt-8 italic">
+            Imamo sve potrebne dozvole za preradu metalnog otpada I sakupljanje raznog otpada. Upisani smo pod brojem za sakupljanje: UP/I-351-02/24-02/1 , dozvola za preradu: UP/I-351-02/24-01/1 , trgovac otpadom TRG-484 I prijevoznik otpadom PRV -3191.
+        </p>
     </div>
 </div>
 <div class="bg-white flex flex-col lg:flex-row justify-between p-16 border-t">

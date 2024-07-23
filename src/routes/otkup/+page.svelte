@@ -1,4 +1,5 @@
 <script>
+	import { goto } from "$app/navigation";
     import { inView, animate } from "motion";
     import { onMount } from "svelte";
     /**
@@ -64,7 +65,9 @@
     </div>
 
 <div class="lg:grid lg:grid-cols-3 lg:grid-rows-4 pb-16">
-    <div bind:this={firstImg} class="bg-[url('/copper.jpg')] shadow-xl mb-4 lg:mr-2 lg:mb-2 rounded-md
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <!-- svelte-ignore a11y-no-static-element-interactions -->
+    <div bind:this={firstImg} on:click={() => goto("/kontakt")} class="cursor-pointer bg-[url('/bakar_legure.jpg')] shadow-xl mb-4 lg:mr-2 lg:mb-2 rounded-md
             relative
             before:content-['']
             overflow-hidden
@@ -81,10 +84,12 @@
             before:hover:opacity-50
             before:z-[-5]
         text-gray-50  col-span-2 row-span-2 min-h-[250px] lg:min-h-[500px] bg-cover hover:scale-105 transition-all duration-200 ease-in flex flex-col justify-center items-center group">
-        <h1 class="text-xl lg:text-4xl font-bold lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in">BAKAR</h1>
-        <p class="p-8 text-center lg:text-2xl lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in font-extrabold">u spadaju legure (bakar, mjed, bronca) “Cijena od do”. </p>
+        <h1 class="text-xl lg:text-4xl font-bold lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in">OBOJENI METALI</h1>
+        <p class="p-8 text-center lg:text-2xl lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in font-extrabold">Bakar i njegove legure, legure aluminija, nikal i njegove legure, legure olova, legure kositra.</p>
     </div>
-    <div bind:this={secondImg} class="bg-[url('/iron.jpg')] rounded-md mb-4
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <!-- svelte-ignore a11y-no-static-element-interactions -->
+    <div bind:this={secondImg} on:click={() => goto("contact")} class="cursor-pointer bg-[url('/inox.jpg')] rounded-md mb-4
         shadow-xl lg:mb-2
         relative
         before:content-['']
@@ -102,10 +107,12 @@
         before:z-[-5]
         text-gray-50 bg-cover hover:scale-105 transition-all min-h-[250px] duration-200 ease-in flex flex-col justify-center items-center group
         ">
-            <h1 class="text-xl lg:text-4xl font-bold lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in">ZELJEZO</h1>
-            <p class="p-8 lg:text-2xl lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in font-extrabold">“Cijena od do”. </p>
+            <h1 class="text-xl lg:text-4xl font-bold lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in uppercase">ČELIK I nehrdajući čelik</h1>
+            <p class="p-8 lg:text-2xl lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in font-extrabold">željezo i inox</p>
     </div>
-    <div bind:this={thirdImg} class="bg-[url('/inox.jpg')] rounded-md mb-4 lg:mb-2
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <!-- svelte-ignore a11y-no-static-element-interactions -->
+    <div bind:this={thirdImg} on:click={() => goto("konakt")} class="cursor-pointer bg-[url('/el_otpad.jpg')] rounded-md mb-4 lg:mb-2
         shadow-xl 
         relative
         before:content-['']
@@ -123,10 +130,11 @@
         before:z-[-5]
         text-gray-50 bg-cover hover:scale-105 transition-all min-h-[250px] duration-200 ease-in flex flex-col justify-center items-center group
         ">
-            <h1 class="text-xl lg:text-4xl font-bold lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in">INOX</h1>
-            <p class="p-8 lg:text-2xl lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in font-extrabold">“Cijena od do”. </p>
+            <h1 class="text-xl lg:text-4xl font-bold lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in uppercase">Elektronički otpad</h1>
     </div>
-    <div bind:this={fourthImg} class="bg-[url('/electronic.jpg')] col-span-3 row-span-3 rounded-md
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <!-- svelte-ignore a11y-no-static-element-interactions -->
+    <div bind:this={fourthImg} on:click={() => goto("/kontakt")} class="cursor-pointer bg-[url('/electronic.jpg')] col-span-3 row-span-3 rounded-md
         shadow-xl 
         relative
         before:content-['']
@@ -144,8 +152,8 @@
         before:z-[-5]
         text-gray-50 bg-cover hover:scale-105 transition-all duration-200 ease-in min-h-[250px] flex flex-col justify-center items-center group
         ">
-            <h1 class="text-xl lg:text-4xl font-bold lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in">ELEKTRONICKI OTPAD</h1>
-            <p class="p-8 lg:text-2xl lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in font-extrabold">“Cijena od do”. </p>
+            <h1 class="text-xl lg:text-4xl font-bold lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in uppercase">SPECIJALNI MATERIJALI</h1>
+            <p class="p-8 lg:text-2xl lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in font-extrabold text-center">Specijalne legure koje sadrže rijetke metale na bazi nikla nnjegove legure, molija, wolframa, kobalta (HSS, Hard metal, Inkonel, Hatsellroy, itd..)</p>
     </div>
 </div>
     <div class="flex flex-col justify-between lg:flex-row text-xl md:text-xl text-gray-500 text-center pt-8 pb-16">
@@ -159,7 +167,7 @@
         </div>
         <div bind:this={cijena} class="flex flex-col justify-center items-center w-full h-full pb-4">
             <svg class="max-w-24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 17V17.5V18" stroke="#a3cc90" stroke-width="1.5" stroke-linecap="round"></path> <path d="M12 6V6.5V7" stroke="#a3cc90" stroke-width="1.5" stroke-linecap="round"></path> <path d="M15 9.5C15 8.11929 13.6569 7 12 7C10.3431 7 9 8.11929 9 9.5C9 10.8807 10.3431 12 12 12C13.6569 12 15 13.1193 15 14.5C15 15.8807 13.6569 17 12 17C10.3431 17 9 15.8807 9 14.5" stroke="#a3cc90" stroke-width="1.5" stroke-linecap="round"></path> <path d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke="#a3cc90" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
-            <p class="py-8 px-2">Cijena ovisi o količini, čistoći I radi li se o jednorodnoj leguri ili se radi o više legura umješahih zajedno.</p>
+            <p class="py-8 px-2">Cijena ovisi o količini, čistoći i radi li se o jednorodnoj leguri ili se radi o više legura umješahih zajedno.</p>
         </div>
     </div>
 </div>

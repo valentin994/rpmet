@@ -2,20 +2,45 @@
     let isMenuOpen = false;
     import { page } from '$app/stores';
     import { browser } from '$app/environment';
-    import { inView, animate } from "motion";
+    import { animate } from "motion";
     import { onMount } from "svelte";
     import Logo from "$lib/assets/logo.svg";
+    import English from "$lib/assets/english.png"
     $: if (browser) document.body.classList.toggle("noscroll", isMenuOpen);
 	$: href = $page.url.pathname;
-    let pocetna, onama, otkup, zbrinjavanje, kontakt;
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let pocetna;
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let engleski;
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let onama;
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let otkup;
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let zbrinjavanje;
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let kontakt;
 
     function toggleMenu() {
         if(!isMenuOpen){
-            animate(pocetna, {x: [-300, 0]}, {duration:1.5})
-            animate(onama, {x: [-300, 0]}, {duration:1.5, delay:0.1})
-            animate(otkup, {x: [-300, 0]}, {duration:1.5, delay: 0.2})
-            animate(zbrinjavanje, {x: [-300, 0]}, {duration:1.5, delay: 0.3})
-            animate(kontakt, {x: [-300, 0]}, {duration:1.5, delay:0.4})
+            animate(engleski, {x: [-300, 0]}, {duration: 1.5})
+            animate(pocetna, {x: [-300, 0]}, {duration:1.5, delay: 0.1})
+            animate(onama, {x: [-300, 0]}, {duration:1.5, delay:0.2})
+            animate(otkup, {x: [-300, 0]}, {duration:1.5, delay: 0.3})
+            animate(zbrinjavanje, {x: [-300, 0]}, {duration:1.5, delay: 0.4})
+            animate(kontakt, {x: [-300, 0]}, {duration:1.5, delay:0.5})
         }
         isMenuOpen = !isMenuOpen;    
     }
@@ -54,6 +79,11 @@
           </ul>
         </div>
         <div class="min-w-24 hidden md:max-[4200px]:block">
+            <div class="">
+                <a href="/home">
+                    <img class="w-8" src={English} alt="English flag" /> 
+                </a>
+            </div>
         </div>
         <button
           name="Contact call to action"
@@ -88,6 +118,13 @@
         }`}
       >
         <ul class="flex flex-col items-baseline w-full justify-end align-middle text-center font-light text-gray-500 pb-36">
+          <li bind:this={engleski} class="text-4xl tracking-tighter p-4 border-t-2 border-gray-300 w-full flex justify-end">
+            <a on:click={() => isMenuOpen = false}
+              href="/home"
+            >
+              <img class="w-10" src={English} alt="english flag" />
+            </a>
+          </li>
           <li bind:this={pocetna} class="text-4xl tracking-tighter p-4 border-y border-t-2 border-gray-300 w-full text-right">
             <a on:click={() => isMenuOpen = false}
               href="/"
@@ -124,5 +161,6 @@
             </a>
           </li>
         </ul>
+        <div></div>
       </nav>
     </nav>

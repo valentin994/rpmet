@@ -1,12 +1,48 @@
 <script>
+// @ts-nocheck
+
 	import { animate, inView } from 'motion';
 	import Recycle from '$lib/assets/recycle.svg';
 	import Dollar from '$lib/assets/dollar.svg';
 	import Kanta from '$lib/assets/kanta.svg';
 	import { onMount } from 'svelte';
-	let group, hero, heading;
-	let recikliraj, otkup, zbrinjavanje;
-	let bakar, aluminij, zeljezo;
+	import { goto } from '$app/navigation';
+	/**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+	let group;
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let hero;
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let heading;
+	/**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+	let recikliraj;
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let otkup; 
+    /**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+    let zbrinjavanje;
+	/**
+	 * @type {HTMLParagraphElement}
+	 */
+	let bakar;
+    /**
+	 * @type {HTMLParagraphElement}
+	 */
+    let aluminij;
+    /**
+	 * @type {HTMLParagraphElement}
+	 */
+    let zeljezo;
 
 	onMount(() => {
 		inView(heading, () => {
@@ -44,7 +80,7 @@
 	});
 </script>
 
-<div class="flex bg-[url('/kantasm.jpg')] bg-cover bg-no-repeat md:bg-[url('/kante.jpg')]">
+<div class="flex bg-[url('/firma.jpg')] bg-cover bg-no-repeat md:bg-[url('/firma.jpg')]">
 	<div class="px-4 md:px-20 py-40 md:py-80 lg:px-48">
 		<h1
 			bind:this={heading}
@@ -55,36 +91,11 @@
 	</div>
 </div>
 <div bind:this={hero} class="px-4 md:px-20 lg:px-48 pt-8">
-	<h1 class="text-3xl text-primary text-center py-4 font-extrabold">RP Metal u brojkama</h1>
-	<div class="flex py-4 justify-center">
-		<img class="max-w-40 md:max-w-32" src={Recycle} alt="Recycle" />
-	</div>
-	<div bind:this={group} class="flex flex-col md:flex-row justify-center">
-		<div class="flex flex-col pt-8 px-4 text-center md:px-12">
-			<h1 class="text-2xl font-semibold text-gray-500">Bakar</h1>
-			<div class="flex flex-col md:flex-row justify-evenly">
-				<p class="text-3xl font-bold text-primary" bind:this={bakar}>0</p>
-				<p class="text-2xl text-gray-300 font-light">t/g</p>
-			</div>
-		</div>
-		<div class="flex flex-col pt-8 px-4 text-center md:px-12">
-			<h1 class="text-2xl font-semibold text-gray-500">Aluminij</h1>
-			<div class="flex flex-col md:flex-row justify-evenly">
-				<p class="text-3xl font-bold text-primary" bind:this={aluminij}>0</p>
-				<p class="text-2xl text-gray-300 font-light">t/g</p>
-			</div>
-		</div>
-		<div class="flex flex-col pt-8 px-4 text-center md:px-12">
-			<h1 class="text-2xl font-semibold text-gray-500">Željezo</h1>
-			<div class="flex flex-col md:flex-row justify-evenly">
-				<p class="text-3xl font-bold text-primary" bind:this={zeljezo}>0</p>
-				<p class="text-2xl text-gray-300 font-light">t/g</p>
-			</div>
-		</div>
-	</div>
 	<h1 class="text-3xl md:text-3xl text-primary font-extrabold text-center py-8 mt-12">NUDIMO USLUGE</h1>
-	<div class="flex flex-col lg:flex-row text-center pb-12 mb-12">
-		<div bind:this={zbrinjavanje} class="px-4 w-full">
+	<div class="flex flex-col lg:flex-row text-center pb-24 mb-24">
+		<!-- svelte-ignore a11y-click-events-have-key-events -->
+		<!-- svelte-ignore a11y-no-static-element-interactions -->
+		<div on:click={() => goto("/kontakt")} bind:this={zbrinjavanje} class="px-4 w-full">
 			<div
 				class="flex flex-col h-full align-middle justify-center border border-gray-200 rounded-md shadow-md p-4 bg-gray-100/25 hover:bg-gray-100/75 my-4"
 			>
@@ -97,9 +108,11 @@
 				</p>
 			</div>
 		</div>
-		<div bind:this={otkup} class="px-4 w-full">
+		<!-- svelte-ignore a11y-click-events-have-key-events -->
+		<!-- svelte-ignore a11y-no-static-element-interactions -->
+		<div on:click={() => goto("/kontakt")} bind:this={otkup} class="px-4 w-full">
 			<div
-				class="flex flex-col h-full align-middle justify-center border border-gray-200 rounded-md shadow-md bg-gray-100/25 hover:bg-gray-100/75 p-4 my-4"
+ 			    class="flex flex-col h-full align-middle justify-center border border-gray-200 rounded-md shadow-md bg-gray-100/25 hover:bg-gray-100/75 p-4 my-4"
 			>
 				<div class="flex justify-center">
 					<img class="max-w-16" src={Dollar} alt="Dollar" />
@@ -110,7 +123,9 @@
 				</p>
 			</div>
 		</div>
-		<div bind:this={recikliraj} class="px-4 w-full">
+		<!-- svelte-ignore a11y-click-events-have-key-events -->
+		<!-- svelte-ignore a11y-no-static-element-interactions -->
+		<div on:click={() => goto("/kontakt")} bind:this={recikliraj} class="px-4 w-full">
 			<div
 				class="flex flex-col h-full align-middle justify-center border border-gray-200 rounded-md shadow-md p-4 bg-gray-100/25 hover:bg-gray-100/75 my-4"
 			>
