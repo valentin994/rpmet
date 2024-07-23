@@ -50,10 +50,10 @@
         })
 
         inView(firstImg, () => {
-            animate(firstImg, {x: [-50, 0], opacity: [0, 1]}, {duration: 0.7, easing: "ease-in"});
-            animate(secondImg, {y: [-50, 0], opacity: [0, 1]}, {duration: 0.7, easing: "ease-in"});
-            animate(thirdImg, {x: [50, 0], opacity: [0, 1]}, {duration: 0.7, easing: "ease-in"});
-            animate(fourthImg, {y: [50, 0], opacity: [0, 1]}, {duration: 0.7, easing: "ease-in"});
+            animate(firstImg, {x: [-100, 0], opacity: [0, 1]}, {duration: 0.7, easing: "ease-in"});
+            animate(secondImg, {x: [100, 0], opacity: [0, 1]}, {duration: 0.7, easing: "ease-in", delay: 0.2});
+            animate(thirdImg, {x: [-100, 0], opacity: [0, 1]}, {duration: 0.7, easing: "ease-in", delay: 0.4});
+            animate(fourthImg, {x: [100, 0], opacity: [0, 1]}, {duration: 0.7, easing: "ease-in", delay: 0.3});
         })
     })
 </script>
@@ -134,7 +134,7 @@
     </div>
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <!-- svelte-ignore a11y-no-static-element-interactions -->
-    <div bind:this={fourthImg} on:click={() => goto("/kontakt")} class="cursor-pointer bg-[url('/electronic.jpg')] rounded-md
+    <div bind:this={fourthImg} on:click={() => goto("/kontakt")} class="cursor-pointer bg-[url('/tungsten.jpeg')] rounded-md
         shadow-xl 
         relative
         before:content-['']

@@ -95,7 +95,7 @@
 	<div class="flex flex-col lg:flex-row text-center pb-24 mb-24">
 		<!-- svelte-ignore a11y-click-events-have-key-events -->
 		<!-- svelte-ignore a11y-no-static-element-interactions -->
-		<div on:click={() => goto("/kontakt")} bind:this={zbrinjavanje} class="px-4 w-full">
+		<div on:click={() => goto("/kontakt")} bind:this={zbrinjavanje} class="px-4 w-full cursor-pointer">
 			<div
 				class="flex flex-col h-full align-middle justify-center border border-gray-200 rounded-md shadow-md p-4 bg-gray-100/25 hover:bg-gray-100/75 my-4"
 			>
@@ -110,7 +110,7 @@
 		</div>
 		<!-- svelte-ignore a11y-click-events-have-key-events -->
 		<!-- svelte-ignore a11y-no-static-element-interactions -->
-		<div on:click={() => goto("/kontakt")} bind:this={otkup} class="px-4 w-full">
+		<div on:click={() => goto("/kontakt")} bind:this={otkup} class="px-4 w-full cursor-pointer">
 			<div
  			    class="flex flex-col h-full align-middle justify-center border border-gray-200 rounded-md shadow-md bg-gray-100/25 hover:bg-gray-100/75 p-4 my-4"
 			>
@@ -125,7 +125,7 @@
 		</div>
 		<!-- svelte-ignore a11y-click-events-have-key-events -->
 		<!-- svelte-ignore a11y-no-static-element-interactions -->
-		<div on:click={() => goto("/kontakt")} bind:this={recikliraj} class="px-4 w-full">
+		<div on:click={() => goto("/kontakt")} bind:this={recikliraj} class="px-4 w-full cursor-pointer">
 			<div
 				class="flex flex-col h-full align-middle justify-center border border-gray-200 rounded-md shadow-md p-4 bg-gray-100/25 hover:bg-gray-100/75 my-4"
 			>
