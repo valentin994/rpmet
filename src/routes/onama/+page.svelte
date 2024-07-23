@@ -268,7 +268,7 @@
     <h1 bind:this={recikliraj} class="text-2xl mx-auto md:text-4xl text-primary font-extrabold">RECIKLIRAJ I PROFITIRAJ</h1>
     <div class="flex flex-col md:flex-row grow pt-4 md:text-xl">
         <div bind:this={reciklirajText} class="w-full md:pr-28 mb-4">
-            <p class="text-gray-700">Odvojeno sakupljanje otpada i recikliranje osnove su modernog upravljanja otpadom jer na taj način štedimo prirodne resurse, smanjujemo gomilanje otpada na odlagalištima i štitimo okoliš. RP MET d.o.o je tvrtka spacijalizirana za trgovanje I preradu metalnog otpada. Posjedujemo škare za rezanje metala, strojeve  za obradu bakrenih kablova. Otkpljujemo metalni otpad koji sortiramo i pripremamo za reciklažu i novi proces proizvodnje.</p>
+            <p class="text-gray-700">Odvojeno sakupljanje otpada i recikliranje osnove su modernog upravljanja otpadom jer na taj način štedimo prirodne resurse, smanjujemo gomilanje otpada na odlagalištima i štitimo okoliš. RP MET d.o.o je tvrtka spacijalizirana za trgovanje I preradu metalnog otpada. Posjedujemo škare za rezanje metala, strojeve  za obradu bakrenih kablova. Otkupljujemo metalni otpad koji sortiramo i pripremamo za reciklažu i novi proces proizvodnje.</p>
         </div>
         <div class="flex flex-col w-full items-end justify-center">
             <div bind:this={listaFirst} class="flex w-full ">
