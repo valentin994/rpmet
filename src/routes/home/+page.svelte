@@ -69,4 +69,5 @@
 			</div>
 		</div>
 	</div>
+    <hr class="w-8 h-2 mx-auto my-8 bg-primary border-0 rounded md:my-16">
 </div>

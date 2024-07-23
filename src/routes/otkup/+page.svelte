@@ -64,10 +64,10 @@
         </div>
     </div>
 
-<div class="lg:grid lg:grid-cols-3 lg:grid-rows-4 pb-16">
+<div class="grid lg:grid-cols-2 gap-2 pb-16">
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <!-- svelte-ignore a11y-no-static-element-interactions -->
-    <div bind:this={firstImg} on:click={() => goto("/kontakt")} class="cursor-pointer bg-[url('/bakar_legure.jpg')] shadow-xl mb-4 lg:mr-2 lg:mb-2 rounded-md
+    <div bind:this={firstImg} on:click={() => goto("/kontakt")} class="cursor-pointer bg-[url('/bakar_legure.jpg')] shadow-xl rounded-md
             relative
             before:content-['']
             overflow-hidden
@@ -83,36 +83,13 @@
             before:lg:opacity-25
             before:hover:opacity-50
             before:z-[-5]
-        text-gray-50  col-span-2 row-span-2 min-h-[250px] lg:min-h-[500px] bg-cover hover:scale-105 transition-all duration-200 ease-in flex flex-col justify-center items-center group">
-        <h1 class="text-xl lg:text-4xl font-bold lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in">OBOJENI METALI</h1>
-        <p class="p-8 text-center lg:text-2xl lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in font-extrabold">Bakar i njegove legure, legure aluminija, nikal i njegove legure, legure olova, legure kositra.</p>
+        text-gray-50  min-h-[250px] lg:min-h-[500px] bg-cover hover:scale-105 transition-all duration-200 ease-in flex flex-col justify-center items-center group">
+        <h1 class="text-2xl lg:text-4xl font-bold lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in">OBOJENI METALI</h1>
+        <p class="p-8 text-center lg:text-xl lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in font-extrabold">Bakar i njegove legure, legure aluminija, nikal i njegove legure, legure olova, legure kositra.</p>
     </div>
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <!-- svelte-ignore a11y-no-static-element-interactions -->
-    <div bind:this={secondImg} on:click={() => goto("contact")} class="cursor-pointer bg-[url('/inox.jpg')] rounded-md mb-4
-        shadow-xl lg:mb-2
-        relative
-        before:content-['']
-        overflow-hidden
-        z-10
-        before:absolute
-        before:inset-0
-        before:block
-        before:transition-all 
-        before:duration-500
-        before:bg-gray-700
-        before:opacity-50
-        before:lg:opacity-25
-        before:hover:opacity-50
-        before:z-[-5]
-        text-gray-50 bg-cover hover:scale-105 transition-all min-h-[250px] duration-200 ease-in flex flex-col justify-center items-center group
-        ">
-            <h1 class="text-xl lg:text-4xl font-bold lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in uppercase">ČELIK I nehrdajući čelik</h1>
-            <p class="p-8 lg:text-2xl lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in font-extrabold">željezo i inox</p>
-    </div>
-    <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <!-- svelte-ignore a11y-no-static-element-interactions -->
-    <div bind:this={thirdImg} on:click={() => goto("konakt")} class="cursor-pointer bg-[url('/el_otpad.jpg')] rounded-md mb-4 lg:mb-2
+    <div bind:this={secondImg} on:click={() => goto("contact")} class="cursor-pointer bg-[url('/inox.jpg')] rounded-md 
         shadow-xl 
         relative
         before:content-['']
@@ -128,13 +105,14 @@
         before:lg:opacity-25
         before:hover:opacity-50
         before:z-[-5]
-        text-gray-50 bg-cover hover:scale-105 transition-all min-h-[250px] duration-200 ease-in flex flex-col justify-center items-center group
+        text-gray-50 bg-cover hover:scale-105 transition-all min-h-[250px] lg:min-h-[500px] duration-200 ease-in flex flex-col justify-center items-center group
         ">
-            <h1 class="text-xl lg:text-4xl font-bold lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in uppercase">Elektronički otpad</h1>
+            <h1 class="text-2xl lg:text-4xl font-bold lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in uppercase">ČELIK I nehrdajući čelik</h1>
+            <p class="p-8 lg:text-xl lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in font-extrabold">željezo i inox</p>
     </div>
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <!-- svelte-ignore a11y-no-static-element-interactions -->
-    <div bind:this={fourthImg} on:click={() => goto("/kontakt")} class="cursor-pointer bg-[url('/electronic.jpg')] col-span-3 row-span-3 rounded-md
+    <div bind:this={thirdImg} on:click={() => goto("konakt")} class="cursor-pointer bg-[url('/el_otpad.jpg')] rounded-md
         shadow-xl 
         relative
         before:content-['']
@@ -150,10 +128,32 @@
         before:lg:opacity-25
         before:hover:opacity-50
         before:z-[-5]
-        text-gray-50 bg-cover hover:scale-105 transition-all duration-200 ease-in min-h-[250px] flex flex-col justify-center items-center group
+        text-gray-50 bg-cover hover:scale-105 transition-all min-h-[250px] lg:min-h-[500px] duration-200 ease-in flex flex-col justify-center items-center group
         ">
-            <h1 class="text-xl lg:text-4xl font-bold lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in uppercase">SPECIJALNI MATERIJALI</h1>
-            <p class="p-8 lg:text-2xl lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in font-extrabold text-center">Specijalne legure koje sadrže rijetke metale na bazi nikla nnjegove legure, molija, wolframa, kobalta (HSS, Hard metal, Inkonel, Hatsellroy, itd..)</p>
+            <h1 class="text-2xl lg:text-4xl font-bold lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in uppercase">Elektronički otpad</h1>
+    </div>
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <!-- svelte-ignore a11y-no-static-element-interactions -->
+    <div bind:this={fourthImg} on:click={() => goto("/kontakt")} class="cursor-pointer bg-[url('/electronic.jpg')] rounded-md
+        shadow-xl 
+        relative
+        before:content-['']
+        overflow-hidden
+        z-10
+        before:absolute
+        before:inset-0
+        before:block
+        before:transition-all 
+        before:duration-500
+        before:bg-gray-700
+        before:opacity-50
+        before:lg:opacity-25
+        before:hover:opacity-50
+        before:z-[-5]
+        text-gray-50 bg-cover hover:scale-105 transition-all duration-200 ease-in min-h-[250px] lg:min-h-[500px] flex flex-col justify-center items-center group
+        ">
+            <h1 class="text-2xl lg:text-4xl font-bold lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in uppercase">SPECIJALNI MATERIJALI</h1>
+            <p class="p-8 lg:text-xl lg:opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in font-extrabold text-center">Specijalne legure koje sadrže rijetke metale na bazi nikla nnjegove legure, molija, wolframa, kobalta (HSS, Hard metal, Inkonel, Hatsellroy, itd..)</p>
     </div>
 </div>
     <div class="flex flex-col justify-between lg:flex-row text-xl md:text-xl text-gray-500 text-center pt-8 pb-16">
