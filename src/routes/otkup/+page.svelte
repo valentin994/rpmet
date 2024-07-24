@@ -67,7 +67,7 @@
 <div class="grid lg:grid-cols-2 gap-2 pb-16">
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <!-- svelte-ignore a11y-no-static-element-interactions -->
-    <div bind:this={firstImg} on:click={() => goto("/kontakt")} class="cursor-pointer bg-[url('/bakar_legure.jpg')] shadow-xl rounded-md
+    <div bind:this={firstImg} on:click={() => goto("/kontakt")} class="cursor-pointer bg-[url('/bakar_legure.avif')] shadow-xl rounded-md
             relative
             before:content-['']
             overflow-hidden
@@ -89,7 +89,7 @@
     </div>
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <!-- svelte-ignore a11y-no-static-element-interactions -->
-    <div bind:this={secondImg} on:click={() => goto("/kontakt")} class="cursor-pointer bg-[url('/inox.jpg')] rounded-md 
+    <div bind:this={secondImg} on:click={() => goto("/kontakt")} class="cursor-pointer bg-[url('/inox.avif')] rounded-md 
         shadow-xl 
         relative
         before:content-['']
@@ -112,7 +112,7 @@
     </div>
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <!-- svelte-ignore a11y-no-static-element-interactions -->
-    <div bind:this={thirdImg} on:click={() => goto("/kontakt")} class="cursor-pointer bg-[url('/el_otpad.jpg')] rounded-md
+    <div bind:this={thirdImg} on:click={() => goto("/kontakt")} class="cursor-pointer bg-[url('/el_otpad.avif')] rounded-md
         shadow-xl 
         relative
         before:content-['']
@@ -135,7 +135,7 @@
     </div>
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <!-- svelte-ignore a11y-no-static-element-interactions -->
-    <div bind:this={fourthImg} on:click={() => goto("/kontakt")} class="cursor-pointer bg-[url('/tungsten.jpeg')] rounded-md
+    <div bind:this={fourthImg} on:click={() => goto("/kontakt")} class="cursor-pointer bg-[url('/tungsten.avif')] rounded-md
         shadow-xl 
         relative
         before:content-['']

@@ -1,5 +1,5 @@
 <script>
-    import Logo from "$lib/assets/logo.svg";
+    import Logo from "$lib/assets/logo.avif";
 </script>
 <div class="border-t p-8 md:pt-8 lg:px-60 text-gray-400">
     <div class="flex flex-col md:flex-row justify-center md:justify-between h-full">

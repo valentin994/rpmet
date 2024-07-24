@@ -1,6 +1,6 @@
 <script>
-    import PlavaKanta from "$lib/assets/plava_kanta.png"
-    import Europe from "$lib/assets/europe.jpg"
+    import PlavaKanta from "$lib/assets/plava_kanta.avif"
+    import Europe from "$lib/assets/europe.avif"
     import { inView, animate } from "motion";
     import { onMount } from "svelte";
 

@@ -80,7 +80,7 @@
 	});
 </script>
 
-<div class="flex bg-[url('/firma.jpg')] bg-cover bg-no-repeat md:bg-[url('/firma.jpg')]">
+<div class="flex bg-[url('/firma.avif')] bg-cover bg-no-repeat">
 	<div class="px-4 md:px-20 py-40 md:py-80 lg:px-48">
 		<h1
 			bind:this={heading}
