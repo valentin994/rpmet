@@ -203,7 +203,7 @@
         <div bind:this={about} class="flex flex-col justify-center md:pr-12 py-2 lg:max-w-[50%]">
             <h2 class="text-gray-400 font-bold">O NAMA</h2>
             <h1 class="text-primary font-light text-3xl">RP Metal</h1>
-            <p class="text-gray-600 py-4 text-xl">Tvrtka RP MET d.o.o osnovana je 2016. Registrirana je pri trgovačkom sudu u Bjelovaru. Uprava se nalazi u Bjelovaru i skladište se nalazi u Velikoj Gorici Ul. Stjepana Fabijančića Jape 164. Posjedujemo kamione za prijevoz sekundarnih sirovina, kontejnere za odlaganje metala, škare za rezanje metala. Otkpljujemo metalni otpad koji sortiramo i pripremamo za reciklažu i novi proces proizvodnje.</p>
+            <p class="text-gray-600 py-4 text-xl">Tvrtka RP MET d.o.o. osnovana je 2016. godine i registrirana pri Trgovačkom sudu u Bjelovaru. Sjedište uprave nalazi se u Bjelovaru, dok je naše skladište smješteno u Velikoj Gorici, na adresi Ul. Stjepana Fabijančića Jape 164. Posjedujemo kamione za prijevoz sekundarnih sirovina, kontejnere za odlaganje metala te škare za rezanje metala. Otkupljujemo metalni otpad koji potom sortiramo i pripremamo za reciklažu, omogućujući novi ciklus proizvodnje.</p>
         </div>
         <div bind:this={plava_kanta} class="flex flex-col justify-center py-2">
             <img class="" src={PlavaKanta} alt="Plava kanta" />
@@ -268,20 +268,20 @@
     <h1 bind:this={recikliraj} class="text-2xl mx-auto md:text-4xl text-primary font-extrabold">RECIKLIRAJ I PROFITIRAJ</h1>
     <div class="flex flex-col md:flex-row grow pt-4 md:text-xl">
         <div bind:this={reciklirajText} class="w-full md:pr-28 mb-4">
-            <p class="text-gray-700">Odvojeno sakupljanje otpada i recikliranje osnove su modernog upravljanja otpadom jer na taj način štedimo prirodne resurse, smanjujemo gomilanje otpada na odlagalištima i štitimo okoliš. RP MET d.o.o je tvrtka spacijalizirana za trgovanje I preradu metalnog otpada. Posjedujemo škare za rezanje metala, strojeve  za obradu bakrenih kablova. Otkupljujemo metalni otpad koji sortiramo i pripremamo za reciklažu i novi proces proizvodnje.</p>
+            <p class="text-gray-700">Odvojeno sakupljanje otpada i recikliranje temelji su modernog upravljanja otpadom jer na taj način štedimo prirodne resurse, smanjujemo gomilanje otpada na odlagalištima i štitimo okoliš. RP MET d.o.o. je tvrtka specijalizirana za trgovanje i preradu metalnog otpada. Posjedujemo škare za rezanje metala te strojeve za obradu bakrenih kablova. Otkupljujemo metalni otpad koji potom sortiramo i pripremamo za reciklažu, omogućujući novi proces proizvodnje.</p>
         </div>
         <div class="flex flex-col w-full items-end justify-center">
             <div bind:this={listaFirst} class="flex w-full ">
                 <svg aria-hidden="true" viewBox="0 0 32 32" class="h-8 w-8 flex-none fill-primary"><path d="M11.83 15.795a1 1 0 0 0-1.66 1.114l1.66-1.114Zm9.861-4.072a1 1 0 1 0-1.382-1.446l1.382 1.446ZM14.115 21l-.83.557a1 1 0 0 0 1.784-.258L14.115 21Zm.954.3c1.29-4.11 3.539-6.63 6.622-9.577l-1.382-1.446c-3.152 3.013-5.704 5.82-7.148 10.424l1.908.598Zm-4.9-4.391 3.115 4.648 1.661-1.114-3.114-4.648-1.662 1.114Z"></path></svg>
-                <p class="text-gray-700 align-top my-auto">Recikliranje pridonosi očuvanju vrijednih prirodnih resursa</p> 
+                <p class="text-gray-700 align-top my-auto">Recikliranje pridonosi očuvanju vrijednih prirodnih resursa.</p> 
             </div>
             <div bind:this={listaSecond} class="flex w-full">
                 <svg aria-hidden="true" viewBox="0 0 32 32" class="h-8 w-8 flex-none fill-primary"><path d="M11.83 15.795a1 1 0 0 0-1.66 1.114l1.66-1.114Zm9.861-4.072a1 1 0 1 0-1.382-1.446l1.382 1.446ZM14.115 21l-.83.557a1 1 0 0 0 1.784-.258L14.115 21Zm.954.3c1.29-4.11 3.539-6.63 6.622-9.577l-1.382-1.446c-3.152 3.013-5.704 5.82-7.148 10.424l1.908.598Zm-4.9-4.391 3.115 4.648 1.661-1.114-3.114-4.648-1.662 1.114Z"></path></svg>
-                <p class="text-gray-700 align-top my-auto">Recikliranje štedi energiju</p> 
+                <p class="text-gray-700 align-top my-auto">Recikliranje štedi energiju.</p> 
             </div>
             <div bind:this={listaThird} class="flex w-full">
                 <svg aria-hidden="true" viewBox="0 0 32 32" class="h-8 w-8 flex-none fill-primary"><path d="M11.83 15.795a1 1 0 0 0-1.66 1.114l1.66-1.114Zm9.861-4.072a1 1 0 1 0-1.382-1.446l1.382 1.446ZM14.115 21l-.83.557a1 1 0 0 0 1.784-.258L14.115 21Zm.954.3c1.29-4.11 3.539-6.63 6.622-9.577l-1.382-1.446c-3.152 3.013-5.704 5.82-7.148 10.424l1.908.598Zm-4.9-4.391 3.115 4.648 1.661-1.114-3.114-4.648-1.662 1.114Z"></path></svg>
-                <p class="text-gray-700 align-top my-auto">Recikliranje smanjuje gomilanje otpada na odlagalištima</p> 
+                <p class="text-gray-700 align-top my-auto">Recikliranje smanjuje gomilanje otpada na odlagalištima.</p> 
             </div>
             <div bind:this={listaFourth} class="flex w-full">
                 <svg aria-hidden="true" viewBox="0 0 32 32" class="h-8 w-8 flex-none fill-primary"><path d="M11.83 15.795a1 1 0 0 0-1.66 1.114l1.66-1.114Zm9.861-4.072a1 1 0 1 0-1.382-1.446l1.382 1.446ZM14.115 21l-.83.557a1 1 0 0 0 1.784-.258L14.115 21Zm.954.3c1.29-4.11 3.539-6.63 6.622-9.577l-1.382-1.446c-3.152 3.013-5.704 5.82-7.148 10.424l1.908.598Zm-4.9-4.391 3.115 4.648 1.661-1.114-3.114-4.648-1.662 1.114Z"></path></svg>
@@ -293,23 +293,19 @@
         <div class="flex flex-col h-full mb-8 md:pr-8 lg:pr-32">
             <div bind:this={misija} class="w-full border border-gray-200 bg-white hover:bg-gray-100/25 shadow-md rounded-md pt-4 px-4 md:px-8 pb-8 h-full">
                 <h2 class="text-2xl md:text-4xl tracking-widest text-primary font-light pb-2">MISIJA</h2>
-                <p class="md:text-xl font-light">
-                    Pružati građanima I tvrtkama pouzdanog I nezamjenjivog partnera u području reciklaže I gospodarenja otpadom.
-                </p>
+                <p class="md:text-xl font-light">Pružati građanima i tvrtkama pouzdanog i nezamjenjivog partnera u području reciklaže i gospodarenju otpadom.</p>
             </div>
         </div>
         <div bind:this={vizija} class="flex flex-col h-full md:pr-8 lg:pr-32">
             <div class="w-full border border-gray-200 bg-white shadow-md rounded-md hover:bg-gray-100/25 pt-4 px-4 md:px-8 pb-8 h-full">
                 <h2 class="text-2xl md:text-4xl tracking-widest font-light text-primary pb-2">VIZIJA</h2>
-                <p class="md:text-xl font-light">
-                    Postati vodeća tvrtka u trgovini metalnim otpadom u regiji te konkurentan partner u usluzi reciklaže svih vrsta otpada. 
-                </p>
+                <p class="md:text-xl font-light">Naš cilj je postati vodeća tvrtka u trgovini metalnim otpadom u regiji te konkurentan partner u uslugama reciklaže svih vrsta otpada.</p>
             </div>
         </div>
     </div>
     <div>
         <p class="text-gray-500 pt-8 italic">
-            Imamo sve potrebne dozvole za preradu metalnog otpada I sakupljanje raznog otpada. Upisani smo pod brojem za sakupljanje: UP/I-351-02/24-02/1 , dozvola za preradu: UP/I-351-02/24-01/1 , trgovac otpadom TRG-484 I prijevoznik otpadom PRV -3191.
+            Imamo sve potrebne dozvole za preradu metalnog otpada i sakupljanje raznog otpada. Upisani smo pod brojem za sakupljanje: UP/I-351-02/24-02/1, dozvola za preradu: UP/I-351-02/24-01/1, trgovac otpadom TRG-484 i prijevoznik otpadom PRV-3191.
         </p>
     </div>
 </div>

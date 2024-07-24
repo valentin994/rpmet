@@ -119,7 +119,7 @@
 				</div>
 				<h1 class="text-2xl text-gray-600 py-2 font-extrabold">Otkupa</h1>
 				<p class="text-md font-light text-gray-500 px-4 md:px-12 pb-2">
-					Vršimo usluge otkupa po najboljim cijenama, kontaktirajte nas kako bi saznali više
+					Vršimo usluge otkupa po najboljim cijenama, kontaktirajte nas kako bi saznali više.
 				</p>
 			</div>
 		</div>
@@ -134,7 +134,7 @@
 				</div>
 				<h1 class="text-2xl text-gray text-gray-600 py-2 font-extrabold">Reciklaže</h1>
 				<p class="text-md font-light text-gray-500 px-4 md:px-12 pb-2">
-					Recikliranje pridonosi očuvanju vrijednih prirodnih resursa, 
+                    Recikliranje pomaže u očuvanju prirodnih resursa, zaštiti okoliša i smanjenju zagađenja.
 				</p>
 			</div>
 		</div>
