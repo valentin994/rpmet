@@ -126,6 +126,12 @@
     ]
 
 </script>
+<svelte:head>
+    <meta name="description" content="Explore our table of products that we buy. RP MET d.o.o offers professional scrap and recycling services for various types of waste, including metal, plastic, and paper products. Contact us for more information.">
+    <meta name="keywords" content="scrap recycling, waste management, metal scrap, plastic waste, paper waste, RP MET d.o.o.">
+    <link rel="canonical" href="https://rp-met.hr/home">
+    <title>Home | RP MET</title>
+</svelte:head>
 <div class="px-8 md:px-20 lg:px-48">
 	<h1 class="text-3xl text-primary text-center pt-8 pb-4 font-extrabold">RP Metal in numbers</h1>
 	<div class="flex py-4 justify-center">

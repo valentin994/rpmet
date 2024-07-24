@@ -198,6 +198,13 @@
         })
     })
 </script>
+<svelte:head>
+    <meta name="keywords" content="recikliranje, zbrinjavanje otpada, ekološke usluge, upravljanje otpadom, RP MET d.o.o.">
+    <meta name="author" content="RP MET d.o.o.">
+    <meta name="description" content="Saznajte više o tvrtki RP MET d.o.o., stručnjaku za recikliranje i zbrinjavanje otpada. Nudimo ekološke usluge i rješenja za učinkovito upravljanje otpadom.">
+    <link rel="canonical" href="https://rp-met.hr/onama">
+    <title>O nama | RP MET</title>
+</svelte:head>
 <div class="px-8 md:px-20 xl:px-60 pt-8">
     <div class="flex justify-between flex-col lg:flex-row ">
         <div bind:this={about} class="flex flex-col justify-center md:pr-12 py-2 lg:max-w-[50%]">

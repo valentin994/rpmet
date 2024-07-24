@@ -42,6 +42,13 @@
         }) 
     })
 </script>
+<svelte:head>
+    <meta name="author" content="RP MET d.o.o.">
+    <meta name="description" content="Kontaktirajte nas za sve informacije o uslugama recikliranja i zbrinjavanja otpada. Naša lokacija i kontakt podaci su dostupni na ovoj stranici.">
+    <meta name="keywords" content="kontakt, informacije, recikliranje, zbrinjavanje otpada, RP MET d.o.o.">
+    <link rel="canonical" href="https://rp-met.hr/kontakt">
+    <title>Kontaktirajte nas | RP MET</title>
+</svelte:head>
 <div class="flex flex-col  justify-center border">
     <h1 bind:this={kontakt} class="text-center text-3xl pt-10 text-gray-600 lg:text-4xl">Kontaktirajte nas</h1>
     <div class="flex flex-col px-8 md:px-20 xl:px-60 md:flex-row justify-center pt-10 pb-28">

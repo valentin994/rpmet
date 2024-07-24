@@ -29,6 +29,12 @@
     })
 
 </script>
+<svelte:head>
+    <meta name="description" content="Profesionalno zbrinjavanje otpada i upravljanje otpadom za tvrtke i fizičke osobe. Otkrijte kako možemo pomoći u učinkovitom rješavanju otpada.">
+    <meta name="keywords" content="zbrinjavanje otpada, upravljanje otpadom, ekološke usluge, RP MET d.o.o.">
+    <link rel="canonical" href="https://rp-met.hr/zbrinjavanje">
+    <title>Zbrinjavanje | RP MET</title>
+</svelte:head>
 <div  class="py-8 bg-[url('/kanta_sm.avif')] md:bg-[url('/kante.avif')] bg-cover bg-no-repeat">
     <div class="px-4 md:px-20 lg:px-48 flex items-end flex-col justify-center min-h-[500px]">
         <div bind:this={header} class="lg:max-w-[500px] bg-gray-50/95 p-4 md:p-8 rounded-md shadow-md">
