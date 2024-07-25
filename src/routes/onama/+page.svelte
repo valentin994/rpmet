@@ -201,6 +201,7 @@
         })
     })
     let isModalOpen = false;
+    let pdfUrl = "";
 	// @ts-ignore
     // @ts-ignore
     function handleWindowKeyDown(event) {
@@ -213,7 +214,11 @@
         console.log("fjsdk")
         }
     }
-    function toggleModal(){
+    /**
+	 * @param {string} pdfUrl
+	 */
+    function toggleModal(pdfUrl){
+        pdfUrl = pdfUrl;
         isModalOpen = true
     }
 </script>
@@ -331,9 +336,7 @@
     </div>
     <div>
         <p class="text-gray-500 pt-8 italic">
-            <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <!-- svelte-ignore a11y-no-static-element-interactions -->
-            Imamo sve potrebne dozvole za preradu metalnog otpada i sakupljanje raznog otpada. Upisani smo pod brojem za sakupljanje: <span on:click={toggleModal} class="underline cursor-pointer text-blue-300">UP/I-351-02/24-02/1</span>, dozvola za preradu: UP/I-351-02/24-01/1, trgovac otpadom TRG-484 i prijevoznik otpadom PRV-3191.
+            Imamo sve potrebne dozvole za preradu metalnog otpada i sakupljanje raznog otpada. Upisani smo pod brojem za sakupljanje: <span on:click={() => toggleModal("/dozvola_upis_u_ocevidnik")} class="underline cursor-pointer text-blue-300">UP/I-351-02/24-02/1</span>, dozvola za preradu: <span on:click={() => toggleModal("/sakupljac.pdf")} class="underline cursor-pointer text-blue-300">UP/I-351-02/24-01/1</span>, trgovac otpadom TRG-484 i prijevoznik otpadom PRV-3191.
         </p>
     </div>
 </div>
