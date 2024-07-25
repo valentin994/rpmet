@@ -3,7 +3,10 @@
     import Europe from "$lib/assets/europe.avif"
     import { inView, animate } from "motion";
     import { onMount } from "svelte";
+    import { browser } from '$app/environment';
+    import clickOutside from "svelte-outside-click";
 
+    $: if (browser) document.body.classList.toggle("noscroll", isModalOpen);
     /**
 	 * @type {import("motion").ElementOrSelector}
 	 */
@@ -197,6 +200,22 @@
             animate(vizija, {x:[50,0], opacity: [0,1]}, {duration: 0.7, easing:"ease-in"})
         })
     })
+    let isModalOpen = false;
+	// @ts-ignore
+    // @ts-ignore
+    function handleWindowKeyDown(event) {
+		if (event.key === 'Escape') {
+			isModalOpen = false;	
+		}
+	}
+    function handleClick(){
+        if(isModalOpen){
+        console.log("fjsdk")
+        }
+    }
+    function toggleModal(){
+        isModalOpen = true
+    }
 </script>
 <svelte:head>
     <meta name="keywords" content="recikliranje, zbrinjavanje otpada, ekološke usluge, upravljanje otpadom, RP MET d.o.o.">
@@ -297,13 +316,13 @@
         </div>
     </div>
     <div class="flex flex-col md:flex-row pt-8">
-        <div class="flex flex-col h-full mb-8 md:pr-8 lg:pr-32">
+        <div class="flex flex-col md:pr-8 w-full lg:pr-32 mb-2">
             <div bind:this={misija} class="w-full border border-gray-200 bg-white hover:bg-gray-100/25 shadow-md rounded-md pt-4 px-4 md:px-8 pb-8 h-full">
                 <h2 class="text-2xl md:text-4xl tracking-widest text-primary font-light pb-2">MISIJA</h2>
                 <p class="md:text-xl font-light">Pružati građanima i tvrtkama pouzdanog i nezamjenjivog partnera u području reciklaže i gospodarenju otpadom.</p>
             </div>
         </div>
-        <div bind:this={vizija} class="flex flex-col h-full md:pr-8 lg:pr-32">
+        <div bind:this={vizija} class="flex flex-col w-full md:pr-8 lg:pr-32 mb-2">
             <div class="w-full border border-gray-200 bg-white shadow-md rounded-md hover:bg-gray-100/25 pt-4 px-4 md:px-8 pb-8 h-full">
                 <h2 class="text-2xl md:text-4xl tracking-widest font-light text-primary pb-2">VIZIJA</h2>
                 <p class="md:text-xl font-light">Naš cilj je postati vodeća tvrtka u trgovini metalnim otpadom u regiji te konkurentan partner u uslugama reciklaže svih vrsta otpada.</p>
@@ -312,7 +331,9 @@
     </div>
     <div>
         <p class="text-gray-500 pt-8 italic">
-            Imamo sve potrebne dozvole za preradu metalnog otpada i sakupljanje raznog otpada. Upisani smo pod brojem za sakupljanje: UP/I-351-02/24-02/1, dozvola za preradu: UP/I-351-02/24-01/1, trgovac otpadom TRG-484 i prijevoznik otpadom PRV-3191.
+            <!-- svelte-ignore a11y-click-events-have-key-events -->
+            <!-- svelte-ignore a11y-no-static-element-interactions -->
+            Imamo sve potrebne dozvole za preradu metalnog otpada i sakupljanje raznog otpada. Upisani smo pod brojem za sakupljanje: <span on:click={toggleModal} class="underline cursor-pointer text-blue-300">UP/I-351-02/24-02/1</span>, dozvola za preradu: UP/I-351-02/24-01/1, trgovac otpadom TRG-484 i prijevoznik otpadom PRV-3191.
         </p>
     </div>
 </div>
@@ -326,6 +347,26 @@
     <div class="mx-auto lg:my-auto">
         <img class="" src="https://strukturnifondovi.hr/wp-content/uploads/2018/05/ESIF-Logo.png" alt="EU" />
     </div>
-
 </div>
 
+{#if isModalOpen}
+<div id="modelConfirm" class={`fixed z-50 inset-0 bg-gray-900 bg-opacity-60 overflow-y-auto h-full w-full px-4 ${isModalOpen ? "block" : ""}`}>
+    <div class="relative top-40 mx-auto shadow-xl rounded-md bg-white max-w-xl">
+
+        <div class="flex justify-end p-2">
+            <button on:click={() => isModalOpen = false} type="button"
+                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+            <div class="h-[500px] md:h-[800px]" use:clickOutside={handleClick}>
+                <iframe src="/dozvola_upis_u_ocevidnik.pdf" width="100%" height="100%" title="PDF"/>
+            </div>
+    </div>
+</div>
+{/if}
+<svelte:window on:keydown|preventDefault={handleWindowKeyDown} />

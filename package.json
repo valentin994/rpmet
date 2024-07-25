@@ -33,6 +33,7 @@
 	"type": "module",
 	"dependencies": {
 		"@vercel/speed-insights": "^1.0.12",
-		"motion": "^10.18.0"
+		"motion": "^10.18.0",
+		"svelte-outside-click": "^1.1.2"
 	}
 }

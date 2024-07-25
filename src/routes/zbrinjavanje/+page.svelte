@@ -35,7 +35,7 @@
     <link rel="canonical" href="https://rp-met.hr/zbrinjavanje">
     <title>Zbrinjavanje | RP MET</title>
 </svelte:head>
-<div  class="py-8 bg-[url('/kanta_sm.avif')] md:bg-[url('/kante.avif')] bg-cover bg-no-repeat">
+<div  class="py-8 bg-[url('/kantasm.avif')] md:bg-[url('/kante.jpg')] bg-cover bg-no-repeat">
     <div class="px-4 md:px-20 lg:px-48 flex items-end flex-col justify-center min-h-[500px]">
         <div bind:this={header} class="lg:max-w-[500px] bg-gray-50/95 p-4 md:p-8 rounded-md shadow-md">
             <h1 class="text-3xl lg:text-5xl text-primary">
