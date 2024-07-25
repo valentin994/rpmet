@@ -98,7 +98,7 @@
 </div>
 <div bind:this={hero} class="px-4 md:px-20 lg:px-48 pt-8">
 	<h1 class="text-3xl md:text-3xl text-primary font-extrabold text-center py-8 mt-12">NUDIMO USLUGE</h1>
-	<div class="flex flex-col lg:flex-row text-center pb-24 mb-24">
+	<div class="flex flex-col lg:flex-row text-center pb-12 mb-12">
 		<!-- svelte-ignore a11y-click-events-have-key-events -->
 		<!-- svelte-ignore a11y-no-static-element-interactions -->
 		<div on:click={() => goto("/kontakt")} bind:this={zbrinjavanje} class="px-4 w-full cursor-pointer">
