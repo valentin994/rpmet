@@ -4,7 +4,6 @@
     import { inView, animate } from "motion";
     import { onMount } from "svelte";
     import { browser } from '$app/environment';
-    import clickOutside from "svelte-outside-click";
 
     $: if (browser) document.body.classList.toggle("noscroll", isModalOpen);
     /**
@@ -272,7 +271,7 @@
             </div>
         </div>
         <div class="flex flex-col justify-center">
-            <h1 bind:this={uprava} class="text-2xl md:text-3xl text-primary font-semibold pb-4 pt-8 text-center md:text-left">OSOBE OVLASTENE ZA ZASTUPANJE</h1>
+            <h1 bind:this={uprava} class="text-2xl md:text-3xl text-primary font-semibold pb-4 pt-8 text-center md:text-left">OSOBE OVLAŠTENE ZA ZASTUPANJE</h1>
             <div bind:this={direktor} class="">
                 <p class="text-lg md:text-xl text-gray-600 font-thin border-l-4 border-primary pl-2">Dubravko <span class="text-gray-500 font-medium">Cvetek</span></p>
             </div>
