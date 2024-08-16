@@ -59,7 +59,7 @@
 </script>
 <svelte:head>
     <meta name="description" content="Otkup metalnog otpada i sekundarnih sirovina. Posjetite nas za više informacija o našim uslugama i cijenama.">
-    <meta name="keywords" content="otkup metalnog otpada, sekundarne sirovine, recikliranje metala, RP MET d.o.o.">
+    <meta name="keywords" content="otkup metalnog otpada, prodaja metala, sekundarne sirovine, recikliranje metala, RP MET d.o.o.">
     <meta name="author" content="RP MET d.o.o.">
     <link rel="canonical" href="https://rp-met.hr/otkup">
     <title>Otkup | RP MET</title>

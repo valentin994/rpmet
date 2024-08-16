@@ -81,10 +81,10 @@
 </script>
 <svelte:head>
     <meta name="author" content="RP MET d.o.o.">
-    <meta name="description" content="Dobrodošli na RP MET d.o.o., vašeg pouzdanog partnera za recikliranje i zbrinjavanje otpada. Nudimo profesionalne usluge upravljanja otpadom i recikliranja u Zagrebu i okolici. Kontaktirajte nas za više informacija.">
-    <meta name="keywords" content="recikliranje, zbrinjavanje otpada, upravljanje otpadom, sekundarne sirovine, RP MET d.o.o.">
+    <meta name="description" content="Dobrodošli na RP MET d.o.o., vašeg pouzdanog partnera za prodaju metala, recikliranje i zbrinjavanje otpada. Nudimo najbolje cijene za prodaju metala, profesionalne usluge upravljanja otpadom i recikliranja u Zagrebu i okolici. Kontaktirajte nas za više informacija.">
+    <meta name="keywords" content="prodaja metala, recikliranje, zbrinjavanje otpada, upravljanje otpadom, sekundarne sirovine, RP MET d.o.o.">
     <link rel="canonical" href="https://rp-met.hr/">
-    <title>Početna | RP MET</title>
+    <title>Početna | RP MET | Otkup metala</title>
 </svelte:head>
 <div class="flex bg-[url('/firma.avif')] bg-cover bg-no-repeat">
 	<div class="px-4 md:px-20 py-40 md:py-80 lg:px-48">
