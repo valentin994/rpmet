@@ -232,7 +232,7 @@
     <div class="flex justify-between flex-col lg:flex-row ">
         <div bind:this={about} class="flex flex-col justify-center md:pr-12 py-2 lg:max-w-[50%]">
             <h2 class="text-gray-400 font-bold">O NAMA</h2>
-            <h1 class="text-primary font-light text-3xl">RP Metal</h1>
+            <h1 class="text-primary font-light text-3xl">RP MET</h1>
             <p class="text-gray-600 py-4 text-xl">Tvrtka RP MET d.o.o. osnovana je 2016. godine i registrirana pri Trgovačkom sudu u Bjelovaru. Sjedište uprave nalazi se u Bjelovaru, dok je naše skladište smješteno u Velikoj Gorici, na adresi Ul. Stjepana Fabijančića Jape 164. Posjedujemo kamione za prijevoz sekundarnih sirovina, kontejnere za odlaganje metala te škare za rezanje metala. Otkupljujemo metalni otpad koji potom sortiramo i pripremamo za reciklažu, omogućujući novi ciklus proizvodnje.</p>
         </div>
         <div bind:this={plava_kanta} class="flex flex-col justify-center py-2">
