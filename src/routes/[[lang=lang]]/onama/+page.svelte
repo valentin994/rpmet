@@ -122,6 +122,14 @@
 	 * @type {import("motion").ElementOrSelector}
 	 */
 	let vizija;
+	/**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+	let licences;
+	/**
+	 * @type {import("motion").ElementOrSelector}
+	 */
+	let partners;
 
 	onMount(() => {
 		inView(about, () => {
@@ -132,13 +140,17 @@
 		});
 
 		inView(osnovni, () => {
-			animate(osnovni, { opacity: [0, 1] }, { duration: 0.7, easing: 'ease-in' });
+			animate(osnovni, { x: [-100, 0], opacity: [0, 1] }, { duration: 0.7, easing: 'ease-in' });
 		});
 		inView(uprava, () => {
-			animate(uprava, { opacity: [0, 1] }, { duration: 0.7, easing: 'ease-in' });
+			animate(uprava, { x: [100, 0], opacity: [0, 1] }, { duration: 0.7, easing: 'ease-in' });
 		});
 		inView(radno_vrijeme, () => {
-			animate(radno_vrijeme, { opacity: [0, 1] }, { duration: 0.7, easing: 'ease-in' });
+			animate(
+				radno_vrijeme,
+				{ x: [100, 0], opacity: [0, 1] },
+				{ duration: 0.7, easing: 'ease-in' }
+			);
 		});
 
 		inView(oib, () => {
@@ -265,6 +277,13 @@
 		inView(vizija, () => {
 			animate(vizija, { x: [50, 0], opacity: [0, 1] }, { duration: 0.7, easing: 'ease-in' });
 		});
+
+		inView(licences, () => {
+			animate(licences, { y: [25, 0], opacity: [0, 1] }, { duration: 0.7, easing: 'ease-in' });
+		});
+		inView(partners, () => {
+			animate(partners, { y: [50, 0], opacity: [0, 1] }, { duration: 0.7, easing: 'ease-in' });
+		});
 	});
 	let isModalOpen = false;
 	let activePdfUrl = '';
@@ -311,7 +330,7 @@
 <Divider className="max-w-16 mx-auto my-8 md:my-12" />
 <div class="px-8 md:px-20 xl:px-60 py-8 md:pt-16 md:pb-24 bg-ink/5">
 	<div class="flex flex-col md:flex-row justify-between">
-		<div class="flex flex-col justify-center">
+		<div class="flex flex-col justify-start">
 			<h1
 				bind:this={osnovni}
 				class="text-2xl md:text-3xl text-primary-deep font-display font-semibold pb-4 text-center md:text-left"
@@ -360,10 +379,10 @@
 				</p>
 			</div>
 		</div>
-		<div class="flex flex-col justify-center">
+		<div class="flex flex-col justify-start">
 			<h1
 				bind:this={uprava}
-				class="text-2xl md:text-3xl text-primary-deep font-display font-semibold pb-4 pt-8 text-center md:text-left"
+				class="text-2xl md:text-3xl text-primary-deep font-display font-semibold pb-4 text-center md:text-left"
 			>
 				{t.management.title}
 			</h1>
@@ -415,7 +434,7 @@
 		<div bind:this={reciklirajText} class="w-full md:pr-28 mb-4">
 			<p class="text-ink/80">{t.recycleProfit.text}</p>
 		</div>
-		<div class="flex flex-col w-full items-end justify-center">
+		<div class="flex flex-col w-full items-end justify-start">
 			<div bind:this={listaFirst} class="flex w-full">
 				<svg aria-hidden="true" viewBox="0 0 32 32" class="h-8 w-8 flex-none fill-primary-deep"
 					><path
@@ -477,7 +496,7 @@
 			</div>
 		</div>
 	</div>
-	<div>
+	<div bind:this={licences}>
 		<p class="text-ink/60 pt-8 italic">
 			{t.licences.prefix}
 			<!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -497,7 +516,10 @@
 		</p>
 	</div>
 </div>
-<div class="bg-white flex flex-col lg:flex-row justify-between p-16 border-t border-ink/10">
+<div
+	bind:this={partners}
+	class="bg-white flex flex-col lg:flex-row justify-between p-16 border-t border-ink/10"
+>
 	<div class="mb-16 mx-auto lg:my-auto">
 		<img src={Hamag} alt="HAMAG" />
 	</div>
