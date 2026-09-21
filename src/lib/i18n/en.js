@@ -26,6 +26,11 @@ export const en = {
 		},
 		heroHeading: 'We are a company specialized in the processing and trade of metal scrap.',
 		heroCta: 'Contact us',
+		trustStats: [
+			{ label: 'Years of experience', target: 10, suffix: '+' },
+			{ label: 'Permit types held', target: 4, suffix: '' },
+			{ label: 'Tonnes per year', target: 1600, suffix: '+' }
+		],
 		servicesEyebrow: 'What we offer',
 		services: [
 			{
@@ -40,7 +45,32 @@ export const en = {
 				title: 'Recycling',
 				desc: 'Recycling helps preserve natural resources, protect the environment and reduce pollution.'
 			}
-		]
+		],
+		whyEyebrow: 'Why RP MET',
+		whyTitle: 'Why choose us',
+		why: [
+			{
+				title: 'Best prices',
+				desc: 'We pay the best prices for your metal scrap, in cash or by bank transfer.'
+			},
+			{
+				title: 'Licensed & compliant',
+				desc: 'We hold all the necessary permits for collecting, processing, trading and transporting waste.'
+			},
+			{
+				title: 'For individuals and companies',
+				desc: 'We purchase scrap from both individuals and companies, with fast, simple payment.'
+			},
+			{
+				title: 'Our own trucks & equipment',
+				desc: 'We own trucks, containers and shears for cutting metal, so we can organize pickup quickly and easily.'
+			}
+		],
+		ctaBanner: {
+			title: 'Got scrap metal to sell?',
+			text: 'Get in touch for a free assessment and the best offer on the market.',
+			button: 'Contact us'
+		}
 	},
 	onama: {
 		seo: {

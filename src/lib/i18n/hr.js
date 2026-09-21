@@ -26,6 +26,11 @@ export const hr = {
 		},
 		heroHeading: 'Mi smo tvrtka specijalizirana za preradu i trgovinu metalnim otpadom.',
 		heroCta: 'Kontaktirajte nas',
+		trustStats: [
+			{ label: 'Godina iskustva', target: 10, suffix: '+' },
+			{ label: 'Vrste dozvola', target: 4, suffix: '' },
+			{ label: 'Tona godišnje', target: 1600, suffix: '+' }
+		],
 		servicesEyebrow: 'Nudimo usluge',
 		services: [
 			{
@@ -40,7 +45,32 @@ export const hr = {
 				title: 'Reciklaže',
 				desc: 'Recikliranje pomaže u očuvanju prirodnih resursa, zaštiti okoliša i smanjenju zagađenja.'
 			}
-		]
+		],
+		whyEyebrow: 'Zašto RP MET',
+		whyTitle: 'Zašto odabrati nas',
+		why: [
+			{
+				title: 'Najbolje cijene',
+				desc: 'Isplaćujemo najbolje cijene za vaš metalni otpad, u gotovini ili na transakcijski račun.'
+			},
+			{
+				title: 'Licencirano i pouzdano',
+				desc: 'Posjedujemo sve potrebne dozvole za sakupljanje, preradu, trgovinu i prijevoz otpada.'
+			},
+			{
+				title: 'Za građane i tvrtke',
+				desc: 'Otkupljujemo otpad od fizičkih i pravnih osoba, uz jednostavnu i brzu isplatu.'
+			},
+			{
+				title: 'Vlastita vozila i oprema',
+				desc: 'Posjedujemo kamione, kontejnere i škare za rezanje metala, pa preuzimanje organiziramo brzo i jednostavno.'
+			}
+		],
+		ctaBanner: {
+			title: 'Imate metalni otpad za prodaju?',
+			text: 'Javite nam se za besplatnu procjenu i najbolju ponudu na tržištu.',
+			button: 'Kontaktirajte nas'
+		}
 	},
 	onama: {
 		seo: {
