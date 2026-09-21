@@ -160,10 +160,21 @@ export const hr = {
 				image: 'fourthImg'
 			}
 		],
-		infoBlocks: [
-			'Otkupljujemo otpad od fizičkih i pravnih osoba. Fizičkim osobama isplaćujemo otkup u gotovini ili putem transakcijskog računa.',
-			'Metalni otpad otkupljujemo na našoj lokaciji te organiziramo prijevoz otpada do našeg skladišta. Posjedujemo kamione za prijevoz sekundarnih sirovina i kontejnere za odlaganje metala.',
-			'Cijena ovisi o količini, čistoći te o tome radi li se o jednorodnoj leguri ili o više legura pomiješanih zajedno.'
+		howItWorksEyebrow: 'Kako otkup funkcionira',
+		howItWorksTitle: 'Od otpada do isplate u tri koraka',
+		howItWorks: [
+			{
+				title: 'Donesite otpad ili zatražite preuzimanje',
+				desc: 'Otpad možete donijeti na našu lokaciju ili organiziramo prijevoz i preuzimanje vlastitim vozilima za sekundarne sirovine.'
+			},
+			{
+				title: 'Vaganje i procjena',
+				desc: 'Cijena ovisi o količini, čistoći i vrsti legure — vagamo i procjenjujemo otpad na licu mjesta.'
+			},
+			{
+				title: 'Isplata',
+				desc: 'Fizičkim osobama isplaćujemo u gotovini ili putem transakcijskog računa, odmah nakon otkupa.'
+			}
 		],
 		statsEyebrow: 'RP MET u brojkama',
 		statsUnit: 't/g',
@@ -238,7 +249,12 @@ export const hr = {
 					{ name: 'Aluminijska mješavina za rezač', description: '' }
 				]
 			}
-		]
+		],
+		ctaBanner: {
+			title: 'Niste sigurni koju vrstu otpada imate?',
+			text: 'Kontaktirajte nas i pomoći ćemo vam prepoznati vrstu te procijeniti vrijednost vašeg otpada.',
+			button: 'Kontaktirajte nas'
+		}
 	},
 	zbrinjavanje: {
 		seo: {

@@ -28,6 +28,10 @@
 	/**
 	 * @type {import("motion").ElementOrSelector}
 	 */
+	let heroCtaBtn;
+	/**
+	 * @type {import("motion").ElementOrSelector}
+	 */
 	let cardsWrap;
 	/**
 	 * @type {import("motion").ElementOrSelector}
@@ -60,6 +64,13 @@
 	onMount(() => {
 		inView(heading, () => {
 			animate(heading, { opacity: [0, 1], x: [-100, 0] }, { duration: 1, easing: 'ease-in' });
+		});
+		inView(heroCtaBtn, () => {
+			animate(
+				heroCtaBtn,
+				{ opacity: [0, 1], y: [20, 0] },
+				{ duration: 0.8, delay: 0.4, easing: 'ease-out' }
+			);
 		});
 		inView(hero, () => {
 			animate(hero, { opacity: [0, 1], y: [100, 0] }, { duration: 1, easing: 'ease-in' });
@@ -104,6 +115,7 @@
 			{t.heroHeading}
 		</h1>
 		<a
+			bind:this={heroCtaBtn}
 			href={`${prefix}/kontakt`}
 			class="inline-block mt-6 px-6 py-3 rounded-md bg-copper text-paper font-display font-bold hover:bg-copper/90 transition-colors"
 		>

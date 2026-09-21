@@ -159,10 +159,21 @@ export const en = {
 				image: 'fourthImg'
 			}
 		],
-		infoBlocks: [
-			'We purchase scrap from individuals and companies. Individuals are paid in cash or by bank transfer.',
-			'We purchase metal scrap at our location and also arrange transport of waste to our warehouse. We own trucks for transporting secondary raw materials and containers for storing metal.',
-			'Price depends on quantity, purity, and whether it is a single alloy or several alloys mixed together.'
+		howItWorksEyebrow: 'How purchasing works',
+		howItWorksTitle: 'From scrap to payout in three steps',
+		howItWorks: [
+			{
+				title: 'Bring it in or request pickup',
+				desc: 'Drop your scrap off at our location, or we organize transport and pickup with our own trucks for secondary raw materials.'
+			},
+			{
+				title: 'Weighing & assessment',
+				desc: 'Price depends on quantity, purity and alloy type — we weigh and assess the scrap on the spot.'
+			},
+			{
+				title: 'Get paid',
+				desc: 'Individuals are paid in cash or by bank transfer, right after the purchase.'
+			}
 		],
 		statsEyebrow: 'RP MET in numbers',
 		statsUnit: 't/y',
@@ -240,7 +251,12 @@ export const en = {
 					{ name: 'Aluminum mixed for shredder', description: '' }
 				]
 			}
-		]
+		],
+		ctaBanner: {
+			title: 'Not sure what grade you have?',
+			text: "Contact us and we'll help you identify the type and assess the value of your scrap.",
+			button: 'Contact us'
+		}
 	},
 	zbrinjavanje: {
 		seo: {
