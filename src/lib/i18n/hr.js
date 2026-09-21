@@ -266,13 +266,52 @@ export const hr = {
 		heroHeading:
 			'Zbrinjavanje otpada vršimo uz naknadu ili bez naknade ovisno o kojem se otpadu radi.',
 		categories: [
-			{ title: 'Otpadna plastika i guma', image: 'guma' },
-			{ title: 'Otpadni papir i karton', image: 'paper' },
-			{ title: 'Otpadno drvo', image: 'drvo' },
-			{ title: 'Građevinski otpad', image: 'grad' },
-			{ title: 'Otpadno staklo', image: 'staklo' },
-			{ title: 'Elektronički otpad', image: 'electronic' }
-		]
+			{
+				title: 'Otpadna plastika i guma',
+				desc: 'Folije, ambalažna plastika, industrijska guma i gumene cijevi.'
+			},
+			{
+				title: 'Otpadni papir i karton',
+				desc: 'Kartonska ambalaža, uredski papir, novine i časopisi.'
+			},
+			{
+				title: 'Otpadno drvo',
+				desc: 'Palete, ambalažno drvo i otpad iz građevinskih radova.'
+			},
+			{
+				title: 'Građevinski otpad',
+				desc: 'Ruševine, izolacijski materijali i mješoviti građevinski otpad.'
+			},
+			{
+				title: 'Otpadno staklo',
+				desc: 'Ravno staklo, staklena ambalaža i prozorsko staklo.'
+			},
+			{
+				title: 'Elektronički otpad',
+				desc: 'Bijela tehnika, rasvjetna tijela i ostali elektronički uređaji za zbrinjavanje.'
+			}
+		],
+		howItWorksEyebrow: 'Kako zbrinjavanje funkcionira',
+		howItWorksTitle: 'Od prijave otpada do zbrinjavanja u tri koraka',
+		howItWorks: [
+			{
+				title: 'Prijavite vrstu otpada',
+				desc: 'Javite nam se telefonom ili putem kontakt forme i opišite o kojoj vrsti i količini otpada se radi.'
+			},
+			{
+				title: 'Procjena i ponuda',
+				desc: 'Procjenjujemo vrstu otpada i, ovisno o materijalu, dogovaramo zbrinjavanje uz naknadu ili bez naknade.'
+			},
+			{
+				title: 'Preuzimanje ili dostava',
+				desc: 'Otpad možete donijeti na našu lokaciju ili organiziramo preuzimanje vlastitim vozilima i kontejnerima.'
+			}
+		],
+		ctaBanner: {
+			title: 'Imate otpad za zbrinjavanje?',
+			text: 'Javite nam se i dogovorite brzo i jednostavno zbrinjavanje, uz ili bez naknade, ovisno o vrsti otpada.',
+			button: 'Kontaktirajte nas'
+		}
 	},
 	kontakt: {
 		seo: {

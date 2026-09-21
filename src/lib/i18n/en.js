@@ -267,13 +267,52 @@ export const en = {
 		},
 		heroHeading: 'We dispose of waste with or without a fee, depending on the type of waste.',
 		categories: [
-			{ title: 'Plastic and rubber waste', image: 'guma' },
-			{ title: 'Paper and cardboard waste', image: 'paper' },
-			{ title: 'Wood waste', image: 'drvo' },
-			{ title: 'Construction waste', image: 'grad' },
-			{ title: 'Glass waste', image: 'staklo' },
-			{ title: 'Electronic waste', image: 'electronic' }
-		]
+			{
+				title: 'Plastic and rubber waste',
+				desc: 'Foils, packaging plastic, industrial rubber and rubber hoses.'
+			},
+			{
+				title: 'Paper and cardboard waste',
+				desc: 'Cardboard packaging, office paper, newspapers and magazines.'
+			},
+			{
+				title: 'Wood waste',
+				desc: 'Pallets, packaging wood and offcuts from construction work.'
+			},
+			{
+				title: 'Construction waste',
+				desc: 'Rubble, insulation materials and mixed construction waste.'
+			},
+			{
+				title: 'Glass waste',
+				desc: 'Flat glass, glass packaging and window glass.'
+			},
+			{
+				title: 'Electronic waste',
+				desc: 'White goods, lighting fixtures and other electronic devices for disposal.'
+			}
+		],
+		howItWorksEyebrow: 'How disposal works',
+		howItWorksTitle: 'From reporting waste to disposal in three steps',
+		howItWorks: [
+			{
+				title: 'Tell us what you have',
+				desc: 'Call us or use the contact form and describe the type and quantity of waste.'
+			},
+			{
+				title: 'Assessment & offer',
+				desc: 'We assess the waste type and, depending on the material, arrange disposal with or without a fee.'
+			},
+			{
+				title: 'Pickup or drop-off',
+				desc: 'Bring the waste to our location, or we organize pickup with our own trucks and containers.'
+			}
+		],
+		ctaBanner: {
+			title: 'Have waste to dispose of?',
+			text: 'Get in touch and arrange fast, straightforward disposal — with or without a fee, depending on the waste type.',
+			button: 'Contact us'
+		}
 	},
 	kontakt: {
 		seo: {
