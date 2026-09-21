@@ -9,7 +9,7 @@ export const hr = {
 	footer: {
 		hoursTitle: 'Radno vrijeme',
 		weekday: 'Radnim danom: 08–16h',
-		saturday: 'Subota: 09–12h',
+		saturday: 'Subota: 08–12h',
 		sunday: 'Nedjelja: Ne radimo!',
 		addressTitle: 'Adresa',
 		impressum: 'Impressum',
@@ -321,7 +321,10 @@ export const hr = {
 			keywords: 'kontakt, informacije, recikliranje, zbrinjavanje otpada, RP MET d.o.o.'
 		},
 		title: 'Kontaktirajte nas',
-		instagramText: 'Pratite nas na Instagramu'
+		intro:
+			'Javite nam se telefonom, e-mailom ili putem Instagrama — ili nas posjetite osobno na našoj lokaciji.',
+		instagramText: 'Pratite nas na Instagramu',
+		findUsTitle: 'Naša lokacija'
 	},
 	impressum: {
 		seo: {

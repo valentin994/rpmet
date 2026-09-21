@@ -9,7 +9,7 @@ export const en = {
 	footer: {
 		hoursTitle: 'Opening hours',
 		weekday: 'Weekdays: 8am–4pm',
-		saturday: 'Saturday: 9am–12pm',
+		saturday: 'Saturday: 8am–12pm',
 		sunday: 'Sunday: Closed',
 		addressTitle: 'Address',
 		impressum: 'Impressum',
@@ -322,7 +322,9 @@ export const en = {
 			keywords: 'contact, information, recycling, waste disposal, RP MET d.o.o.'
 		},
 		title: 'Contact us',
-		instagramText: 'Follow us on Instagram'
+		intro: 'Reach us by phone, email or Instagram — or visit us in person at our warehouse.',
+		instagramText: 'Follow us on Instagram',
+		findUsTitle: 'Our location'
 	},
 	impressum: {
 		seo: {
